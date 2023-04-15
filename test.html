@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Slide Image Background with Nav Bar</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Custom CSS -->
+    <style>
+      /* Set height to 100% for full screen image */
+      .slide-image {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center; /* Add position relative */
+      }
+
+      /* Title style */
+      .title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+      }
+
+      /* Navigation bar style */
+      .navbar {
+        background-color: transparent; /* Set background color to transparent */
+        position: absolute; /* Add position absolute */
+        top: 0; /* Position navbar at top of slide image */
+        width: 100%; /* Set navbar width to 100% */
+        z-index: 1; /* Set z-index to be above slide image */
+      }
+
+      .navbar-brand {
+        color: #fff;
+        font-size: 2rem;
+      }
+
+      .navbar-nav .nav-link {
+        color: #fff;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="img/logo.png"
+            alt="SJ PhotoBooth Logo"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+          />
+          SJ PhotoBooth
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Slide image background with title -->
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Slides -->
+      <div class="carousel-inner">
+        <div
+          class="carousel-item active slide-image"
+          style="background-image: url('img/Slide/slide1.JPG')"
+        >
+          <!-- <div
+            class="carousel-caption d-flex align-items-center justify-content-center"
+          > -->
+          <div class="container">
+            <h1 class="title">Welcome to SJ Photobooth</h1>
+            <p class="lead">
+              Capture memories with our fun and interactive photobooth services
+            </p>
+            <a href="#contact" class="btn btn-light">Get a Quote</a>
+          </div>
+          <!-- </div> -->
+        </div>
+        <div
+          class="carousel-item active slide-image"
+          style="background-image: url('img/Slide/slide2.JPG')"
+        >
+          <!-- <div
+            class="carousel-caption d-flex align-items-center justify-content-center"
+          > -->
+          <div class="container">
+            <h1 class="title">Welcome to SJ Photobooth</h1>
+            <p class="lead">
+              Capture memories with our fun and interactive photobooth services
+            </p>
+            <a href="#contact" class="btn btn-light">Get a Quote</a>
+          </div>
+          <!-- </div> -->
+        </div>
+        <div
+          class="carousel-item active slide-image"
+          style="background-image: url('img/Slide/slide3.JPG')"
+        >
+          <!-- <div
+            class="carousel-caption d-flex align-items-center justify-content-center"
+          > -->
+          <div class="container">
+            <h1 class="title">Welcome to SJ Photobooth</h1>
+            <p class="lead">
+              Capture memories with our fun and interactive photobooth services
+            </p>
+            <a href="#contact" class="btn btn-light">Get a Quote</a>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+
+      <!-- Controls -->
+      <a
+        class="carousel-control-prev"
+        href="#myCarousel"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#myCarousel"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

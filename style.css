@@ -1,0 +1,116 @@
+/* Custom CSS for photobooth website */
+.navbar {
+  background-color: transparent; /* Set background color to transparent */
+  position: absolute; /* Add position absolute */
+  top: 0; /* Position navbar at top of slide image */
+  width: 100%; /* Set navbar width to 100% */
+  z-index: 2; /* Set z-index to be above slide image */
+}
+.nav-item .nav-link {
+  color: #ffffff;
+}
+.container {
+  max-width: 1200px;
+}
+.slide-image {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  /* Add position relative */
+}
+.navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+/* Hero section style */
+#home {
+  position: relative;
+  overflow: hidden;
+}
+.carousel-fade .carousel-inner .carousel-item {
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.carousel-fade .carousel-inner .carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Set opacity for the overlay */
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; /* Set the desired text color */
+  z-index: 1;
+  width: 100%; /* Add width to ensure full width centering */
+}
+
+.carousel-item .carousel-caption h1 {
+  font-size: 4rem;
+  margin-top: 0; /* Remove default margin */
+  margin-bottom: 1rem; /* Add margin at the bottom for spacing */
+}
+.carousel-fade .carousel-inner .carousel-item .carousel-caption p {
+  font-size: 1.5rem;
+}
+.carousel-fade .carousel-inner .carousel-item .carousel-caption .btn {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.carousel-fade .carousel-indicators li {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Set the background color of the indicators with opacity */
+  border: none;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  cursor: pointer;
+}
+/* Services section style */
+.services {
+  background-color: #f8f9fa;
+}
+
+/* Portfolio section style */
+.portfolio {
+  background-color: #fff;
+}
+
+/* Gallery images style */
+.gallery-img {
+  border: 10px solid rgba(229, 208, 129, 1);
+}
+
+/* Contact section style */
+#contact {
+  background-color: #f8f9fa;
+}
+
+/* Form input style */
+.form-control {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Form submit button style */
+/* .btn-primary {
+  background-color: rgba(70, 121, 234, 1);
+  border-color: rgba(70, 121, 234, 1);
+} */
