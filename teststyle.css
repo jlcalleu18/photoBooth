@@ -1,0 +1,175 @@
+/* Reset some default styles */
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.navbar {
+  background-color: #007bff;
+  padding: 10px;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav li {
+  margin-left: 10px;
+}
+
+.navbar-nav li a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.navbar-nav li a:hover {
+  color: #0056b3;
+}
+
+.hero {
+  background-image: url("img/gallery.jpg");
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.services {
+  margin-top: 50px;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.services .card {
+  border: none;
+}
+
+.services .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.services .card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.services .card-text {
+  font-size: 16px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+#contact {
+  margin-top: 50px;
+}
+
+#contact h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+#contact form {
+  margin-bottom: 20px;
+}
+
+#contact form .form-group {
+  margin-bottom: 15px;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.footer {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
