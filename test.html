@@ -2,183 +2,193 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Slide Image Background with Nav Bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SJ Photo Booth</title>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <!-- Custom CSS -->
-    <style>
-      /* Set height to 100% for full screen image */
-      .slide-image {
-        height: 100vh;
-        background-size: cover;
-        background-position: center;
-        align-items: center;
-        justify-content: center;
-        text-align: center; /* Add position relative */
-      }
-
-      /* Title style */
-      .title {
-        font-size: 3rem;
-        margin-bottom: 2rem;
-      }
-
-      /* Navigation bar style */
-      .navbar {
-        background-color: transparent; /* Set background color to transparent */
-        position: absolute; /* Add position absolute */
-        top: 0; /* Position navbar at top of slide image */
-        width: 100%; /* Set navbar width to 100% */
-        z-index: 1; /* Set z-index to be above slide image */
-      }
-
-      .navbar-brand {
-        color: #fff;
-        font-size: 2rem;
-      }
-
-      .navbar-nav .nav-link {
-        color: #fff;
-        font-size: 1.2rem;
-      }
-    </style>
+    <link rel="stylesheet" href="teststyle.css" />
   </head>
 
   <body>
-    <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="SJ Photo Booth" class="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="home" class="banner">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h1 class="banner-title">Capture Your Memories</h1>
+              <p class="banner-text">With SJ Photo Booth</p>
+              <a href="#contact" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="col-lg-6">
+              <img src="img/gallery.jpg" alt="Banner" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="services" class="bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img
-            src="img/logo.png"
-            alt="SJ PhotoBooth Logo"
-            width="30"
-            height="30"
-            class="d-inline-block align-top"
-          />
-          SJ PhotoBooth
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#home"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+        <h2 class="text-center mb-5">Our Services</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="img/gallery.jpg" class="card-img-top" alt="Service 1" />
+              <div class="card-body">
+                <h5 class="card-title">High-Quality Prints</h5>
+                <p class="card-text">
+                  We provide high-quality prints that capture your special
+                  moments with excellent clarity and color.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="service2.jpg" class="card-img-top" alt="Service 2" />
+              <div class="card-body">
+                <h5 class="card-title">Customizable Templates</h5>
+                <p class="card-text">
+                  Choose from a variety of customizable templates for your photo
+                  prints to match your event theme or branding.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="service3.jpg" class="card-img-top" alt="Service 3" />
+              <div class="card-body">
+                <h5 class="card-title">Fun Props</h5>
+                <p class="card-text">
+                  We provide a wide selection of fun and unique props for your
+                  guests to use in their photos, adding an extra element of fun
+                  to your event.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-
-    <!-- Slide image background with title -->
-
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-
-      <!-- Slides -->
-      <div class="carousel-inner">
-        <div
-          class="carousel-item active slide-image"
-          style="background-image: url('img/Slide/slide1.JPG')"
-        >
-          <!-- <div
-            class="carousel-caption d-flex align-items-center justify-content-center"
-          > -->
-          <div class="container">
-            <h1 class="title">Welcome to SJ Photobooth</h1>
-            <p class="lead">
-              Capture memories with our fun and interactive photobooth services
-            </p>
-            <a href="#contact" class="btn btn-light">Get a Quote</a>
+    </section>
+    <section id="gallery">
+      <div class="container">
+        <h2 class="text-center mb-5">Gallery</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="gallery-item">
+              <img src="gallery1.jpg" alt="Gallery 1" class="img-fluid" />
+            </div>
           </div>
-          <!-- </div> -->
-        </div>
-        <div
-          class="carousel-item active slide-image"
-          style="background-image: url('img/Slide/slide2.JPG')"
-        >
-          <!-- <div
-            class="carousel-caption d-flex align-items-center justify-content-center"
-          > -->
-          <div class="container">
-            <h1 class="title">Welcome to SJ Photobooth</h1>
-            <p class="lead">
-              Capture memories with our fun and interactive photobooth services
-            </p>
-            <a href="#contact" class="btn btn-light">Get a Quote</a>
+          <div class="col-lg-4">
+            <div class="gallery-item">
+              <img src="gallery2.jpg" alt="Gallery 2" class="img-fluid" />
+            </div>
           </div>
-          <!-- </div> -->
-        </div>
-        <div
-          class="carousel-item active slide-image"
-          style="background-image: url('img/Slide/slide3.JPG')"
-        >
-          <!-- <div
-            class="carousel-caption d-flex align-items-center justify-content-center"
-          > -->
-          <div class="container">
-            <h1 class="title">Welcome to SJ Photobooth</h1>
-            <p class="lead">
-              Capture memories with our fun and interactive photobooth services
-            </p>
-            <a href="#contact" class="btn btn-light">Get a Quote</a>
+          <div class="col-lg-4">
+            <div class="gallery-item">
+              <img src="gallery3.jpg" alt="Gallery 3" class="img-fluid" />
+            </div>
           </div>
         </div>
-        <!-- </div> -->
       </div>
+    </section>
 
-      <!-- Controls -->
-      <a
-        class="carousel-control-prev"
-        href="#myCarousel"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#myCarousel"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
+    <section id="contact" class="bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Contact Us</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <form action="contact.php" method="post">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  class="form-control"
+                  rows="5"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <h4>Contact Information</h4>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> info@sjphotobooth.com</p>
+            <p><strong>Address:</strong> 1234 Main St, San Jose, CA 95101</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-center">
+      <p>&copy; 2023 SJ Photo Booth. All rights reserved.</p>
+    </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
