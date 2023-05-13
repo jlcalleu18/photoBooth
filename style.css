@@ -1,4 +1,16 @@
 /* Custom CSS for photobooth website */
+
+:root {
+  --bitcoin-orage: #f7931a;
+  --soft-orage: #ffe9d5;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #201e1c;
+  --black: #282623;
+  --grey: #bababa;
+  --off-white: #faf8f7;
+  --just-white: #ffffff;
+}
 .navbar {
   background-color: transparent; /* Set background color to transparent */
   position: absolute; /* Add position absolute */
@@ -83,34 +95,60 @@
   margin: 0 6px;
   cursor: pointer;
 }
-/* Services section style */
-.services {
-  background-color: #f8f9fa;
+
+main {
+  width: 100%;
+  height: auto;
+  background-color: var(--off-white);
+}
+.title {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.service-dark-bg {
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  background-color: var(--warm-black);
+  color: var(--just-white);
 }
 
-/* Portfolio section style */
-.portfolio {
-  background-color: #fff;
+.service-detail--card {
+  width: 90%;
+  min-width: 370px;
+  max-width: 370px;
+  min-height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--black);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.service-card-h4 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
 }
 
-/* Gallery images style */
-.gallery-img {
-  border: 10px solid rgba(229, 208, 129, 1);
+.portfolio-title {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 0px 90px;
+  color: var(--black);
 }
 
-/* Contact section style */
-#contact {
-  background-color: #f8f9fa;
+.portfolio-text {
+  margin: 20px 0;
+  padding: 0 90px;
+  font-size: 1.2rem;
 }
-
-/* Form input style */
-.form-control {
-  background-color: #fff;
-  color: #000;
+.portfolio-card-h4 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--black);
 }
-
-/* Form submit button style */
-/* .btn-primary {
-  background-color: rgba(70, 121, 234, 1);
-  border-color: rgba(70, 121, 234, 1);
-} */

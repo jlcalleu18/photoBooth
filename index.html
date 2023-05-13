@@ -11,216 +11,302 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img
-            src="img/logo.png"
-            alt="SJ PhotoBooth Logo"
-            width="50"
-            height="50"
-            class="d-inline-block align-top"
-          />
-          SJ PhotoBooth
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#home"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="img/logo.png"
+              alt="SJ PhotoBooth Logo"
+              width="50"
+              height="50"
+              class="d-inline-block align-top"
+            />
+            SJ PhotoBooth
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#home"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-
-    <section id="home" class="text-light text-center">
-      <!-- Slide show background -->
-      <div
-        id="heroCarousel"
-        class="carousel slide carousel-fade"
-        data-ride="carousel"
-      >
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#heroCarousel" data-slide-to="1"></li>
-          <li data-target="#heroCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Slides -->
-        <div class="carousel-inner">
-          <div
-            class="carousel-item active slide-image"
-            style="background-image: url('img/Slide/slide1.JPG')"
-          ></div>
-          <div
-            class="carousel-item slide-image"
-            style="background-image: url('img/Slide/slide2.JPG')"
-          ></div>
-          <div
-            class="carousel-item slide-image"
-            style="background-image: url('img/Slide/slide3.JPG')"
-          ></div>
-        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="text-light text-center">
+        <!-- Slide show background -->
         <div
-          class="carousel-caption d-flex align-items-center justify-content-center"
+          id="heroCarousel"
+          class="carousel slide carousel-fade"
+          data-ride="carousel"
         >
-          <div>
-            <h1 class="display-4">Welcome to SJ Photobooth</h1>
-            <p class="lead">
-              Capture memories with our fun and interactive photobooth services
-            </p>
-            <a href="#contact" class="btn btn-light">Get a Quote</a>
-          </div>
-        </div>
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li
+              data-target="#heroCarousel"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#heroCarousel" data-slide-to="1"></li>
+            <li data-target="#heroCarousel" data-slide-to="2"></li>
+          </ol>
 
-        <!-- Controls -->
-        <a
-          class="carousel-control-prev"
-          href="#heroCarousel"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#heroCarousel"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-5">
-      <div class="container">
-        <h2 class="text-center">Our Services</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <h4>Photobooth Rental</h4>
-            <p>
-              Capture fun and memorable moments with our stylish and modern
-              photobooths for rent.
-            </p>
+          <!-- Slides -->
+          <div class="carousel-inner">
+            <div
+              class="carousel-item active slide-image"
+              style="background-image: url('img/Slide/slide1.JPG')"
+            ></div>
+            <div
+              class="carousel-item slide-image"
+              style="background-image: url('img/Slide/slide2.JPG')"
+            ></div>
+            <div
+              class="carousel-item slide-image"
+              style="background-image: url('img/Slide/slide3.JPG')"
+            ></div>
           </div>
-          <div class="col-md-4">
-            <h4>Custom Props</h4>
-            <p>
-              Add extra flair to your photos with our wide range of custom props
-              and backdrops.
-            </p>
-          </div>
-          <div class="col-md-4">
-            <h4>Instant Printing</h4>
-            <p>
-              Take home high-quality photo prints on the spot and cherish the
-              memories forever.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="bg-light py-5">
-      <div class="container">
-        <h2 class="text-center">Our Portfolio</h2>
-        <p class="text-center">
-          Check out some of our past events and happy customers
-        </p>
-        <!-- Image Gallery -->
-        <div class="row">
-          <div class="col-md-4">
-            <img
-              src="img/gallery.jpg"
-              alt="Gallery Image 1"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-md-4">
-            <img
-              src="img/gallery.jpg"
-              alt="Gallery Image 2"
-              class="img-fluid"
-            />
-          </div>
-          <div class="col-md-4">
-            <img
-              src="img/gallery.jpg"
-              alt="Gallery Image 3"
-              class="img-fluid"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-      <div class="container">
-        <h2 class="text-center">Contact Us</h2>
-        <p class="text-center">
-          Ready to book or have questions? Contact us today!
-        </p>
-        <form>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                placeholder="Your Name"
-              />
-            </div>
-            <div class="form-group col-md-6">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="Your Email"
-              />
+          <div
+            class="carousel-caption d-flex align-items-center justify-content-center"
+          >
+            <div>
+              <h1 class="display-4 title">Welcome to SJ Photobooth</h1>
+              <p class="lead">
+                Capture memories with our fun and interactive photobooth
+                services
+              </p>
+              <a href="#contact" class="btn btn-light">Get a Quote</a>
             </div>
           </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea
-              class="form-control"
-              id="message"
-              rows="4"
-              placeholder="Your Message"
-            ></textarea>
+
+          <!-- Controls -->
+          <a
+            class="carousel-control-prev"
+            href="#heroCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#heroCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-5">
+        <div class="container">
+          <h2 class="text-center title">Our Services</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <h4>Photobooth Rental</h4>
+              <p>
+                Capture fun and memorable moments with our stylish and modern
+                photobooths for rent.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h4>Custom Props</h4>
+              <p>
+                Add extra flair to your photos with our wide range of custom
+                props and backdrops.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h4>Instant Printing</h4>
+              <p>
+                Take home high-quality photo prints on the spot and cherish the
+                memories forever.
+              </p>
+            </div>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
-    </section>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="py-5 service-dark-bg">
+        <div class="container">
+          <h2 class="text-center title">Our Services</h2>
+          <!-- Image Gallery -->
+          <div class="row">
+            <div class="col-md-4 service-detail--card">
+              <img
+                src="img/Photo-Booth.jpg"
+                alt="Gallery Image 1"
+                class="img-fluid border rounded"
+              />
+              <h4 class="service-card-h4">Photobooth Rental</h4>
+              <p>
+                Capture fun and memorable moments with our stylish and modern
+                photobooth for rent.
+              </p>
+              </p>
+            </div>
+
+            <div class="col-md-4 service-detail--card" >
+              <img
+                src="img/props.jpg"
+                alt="Gallery Image 2"
+                class="img-fluid border rounded "
+              />
+              <h4 class="service-card-h4">Custom Props</h4>
+              <p>
+                Add extra flair to your photos with our wide range of custom
+                props and backdrops.
+              </p>
+            </div>
+            <div class="col-md-4 service-detail--card">
+              <img
+                src="img/Instant-Print.webp"
+                alt="Gallery Image 3"
+                class="img-fluid border rounded"
+              />
+              <h4 class="service-card-h4">Instant Printing</h4>
+              <p>
+                Take home high-quality photo prints on the spot and cherish the
+                memories forever.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+            <!-- Portfolio Section -->
+            <section id="portfolio" class="py-5">
+              <div class="container">
+                <h2 class="text-center portfolio-title, title">Elevate Your Event with the Latest Photo Booth Features for Lasting Memories</h2>
+                <p class="text-center portfolio-text">
+                  Whether it's for a wedding, sweet 16th, birthday, corporate event, or prom, we've got you covered with customizable and classy rentals that will capture every moment of your special occasion.
+                </p>
+                <!-- Image Gallery -->
+                <div class="row">
+                  <div class="col-md-3 portfolio-detail--card">
+                    <img
+                      src="img/Photo-Booth.jpg"
+                      alt="Gallery Image 1"
+                      class="img-fluid border rounded"
+                    />
+                    <h4 class="portfolio-card-h4">Photobooth Rental</h4>
+                    <p>
+                      Capture fun and memorable moments with our stylish and modern
+                      photobooth for rent.
+                    </p>
+                    </p>
+                  </div>
+      
+                  <div class="col-md-3 portfolio-detail--card" >
+                    <img
+                      src="img/props.jpg"
+                      alt="Gallery Image 2"
+                      class="img-fluid border rounded "
+                    />
+                    <h4 class="portfolio-card-h4">Custom Props</h4>
+                    <p>
+                      Add extra flair to your photos with our wide range of custom
+                      props and backdrops.
+                    </p>
+                  </div>
+                  <div class="col-md-3 portfolio-detail--card">
+                    <img
+                      src="img/Instant-Print.webp"
+                      alt="Gallery Image 3"
+                      class="img-fluid border rounded"
+                    />
+                    <h4 class="portfolio-card-h4">Instant Printing</h4>
+                    <p>
+                      Take home high-quality photo prints on the spot and cherish the
+                      memories forever.
+                    </p>
+                  </div>
+                  <div class="col-md-3 portfolio-detail--card">
+                    <img
+                      src="img/Instant-Print.webp"
+                      alt="Gallery Image 3"
+                      class="img-fluid border rounded"
+                    />
+                    <h4 class="portfolio-card-h4">Instant Printing</h4>
+                    <p>
+                      Take home high-quality photo prints on the spot and cherish the
+                      memories forever.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+      <!-- Contact Section -->
+      <section id="contact" class="py-5">
+        <div class="container">
+          <h2 class="text-center">Contact Us</h2>
+          <p class="text-center">
+            Ready to book or have questions? Contact us today!
+          </p>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Your Email"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="4"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
     <!-- Footer -->
     <footer class="bg-light text-center py-3">
       <div class="container">
