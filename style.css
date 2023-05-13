@@ -11,6 +11,9 @@
   --off-white: #faf8f7;
   --just-white: #ffffff;
 }
+html {
+  min-width: 320px;
+}
 .navbar {
   background-color: transparent; /* Set background color to transparent */
   position: absolute; /* Add position absolute */
@@ -22,7 +25,7 @@
   color: #ffffff;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
 }
 .slide-image {
   height: 100vh;
@@ -116,8 +119,8 @@ main {
 
 .service-detail--card {
   width: 90%;
-  min-width: 370px;
-  max-width: 370px;
+  min-width: 288px;
+  max-width: 400px;
   min-height: 150px;
   margin: 15px auto;
   padding: 15px;
@@ -144,6 +147,15 @@ main {
   margin: 20px 0;
   padding: 0 90px;
   font-size: 1.2rem;
+}
+.portfolio-detail--card {
+  min-width: 140px;
+  max-width: 380px;
+  min-height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  /* border-radius: 5px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16); */
 }
 .portfolio-card-h4 {
   margin-top: 15px;
