@@ -120,7 +120,7 @@ main {
 .service-detail--card {
   width: 90%;
   min-width: 288px;
-  max-width: 400px;
+  max-width: 320px;
   min-height: 150px;
   margin: 15px auto;
   padding: 15px;
