@@ -15,14 +15,26 @@ html {
   min-width: 320px;
 }
 .navbar {
-  background-color: transparent; /* Set background color to transparent */
-  position: absolute; /* Add position absolute */
-  top: 0; /* Position navbar at top of slide image */
-  width: 100%; /* Set navbar width to 100% */
-  z-index: 2; /* Set z-index to be above slide image */
+  background-color: rgb(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .nav-item .nav-link {
   color: #ffffff;
+}
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  font-family: "Lucida Handwriting";
+  text-align: CENTER;
+}
+.navbar-brand #logo-text {
+  text-align: center;
 }
 .container {
   max-width: 1300px;
@@ -33,11 +45,7 @@ html {
   background-position: center;
   /* Add position relative */
 }
-.navbar-brand {
-  font-size: 30px;
-  font-weight: bold;
-  color: #ffffff;
-}
+
 /* Hero section style */
 #home {
   position: relative;
