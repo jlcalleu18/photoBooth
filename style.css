@@ -11,12 +11,23 @@
   --off-white: #faf8f7;
   --just-white: #ffffff;
 }
+@media (max-width: 600px) {
+  #navgetquote {
+    width: 100%;
+    margin: 0;
+    bottom: 40px;
+    position: fixed;
+  }
+  #navgetquote .btn {
+    width: 30px;
+  }
+}
 html {
   min-width: 320px;
 }
 .navbar {
-  background-color: rgb(0, 0, 0, 0.4);
-  position: absolute;
+  background-color: rgb(32, 30, 28);
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
@@ -26,16 +37,10 @@ html {
 .nav-item .nav-link {
   color: #ffffff;
 }
-.navbar-brand {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0;
-  font-family: "Lucida Handwriting";
-  text-align: CENTER;
+.navbar-brand img {
+  width: 200px;
 }
-.navbar-brand #logo-text {
-  text-align: center;
-}
+
 .container {
   max-width: 1300px;
 }
@@ -43,13 +48,18 @@ html {
   height: 100vh;
   background-size: cover;
   background-position: center;
-  /* Add position relative */
 }
 
 /* Hero section style */
 #home {
   position: relative;
   overflow: hidden;
+  padding-top: 65px;
+}
+main {
+  width: 100%;
+  height: auto;
+  background-color: var(--off-white);
 }
 .carousel-fade .carousel-inner .carousel-item {
   height: 90vh;
@@ -107,11 +117,6 @@ html {
   cursor: pointer;
 }
 
-main {
-  width: 100%;
-  height: auto;
-  background-color: var(--off-white);
-}
 .title {
   font-weight: bold;
   font-size: 2.5rem;

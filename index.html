@@ -8,22 +8,25 @@
   <!-- Add Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/tablet.css" media="(min-width: 930px)" />
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="img/logo.png" alt="SJ PhotoBooth Logo" width="50" height="50" class="d-inline-block align-top" />
-          <span id="logo-text">sj Photo Booth</span>
+          <img src="img/SJ-Photo-Booth-words.png" alt="SJ PhotoBooth" class="d-inline-block align-top" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="navbarNav">
-          <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -37,13 +40,17 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
-        </div>
+          </div>
+          <div id="navgetquote">
+            <button type="button" class="btn btn-outline-primary " >Get Quote</button>
+          </div>
       </div>
     </nav>
 
 
 
   </header>
+  
   <main>
     <section id="home" class="text-light text-center">
       <!-- Slide show background -->
@@ -221,4 +228,3 @@
 </body>
 
 </html>
-```
