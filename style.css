@@ -1,8 +1,8 @@
 /* Custom CSS for photobooth website */
 
 :root {
-  --bitcoin-orage: #f7931a;
-  --soft-orage: #ffe9d5;
+  --primary-blue: #3c6bca;
+  --primary-gold: #eab105;
   --secondary-blue: #1a9af7;
   --soft-blue: #e7f5ff;
   --warm-black: #201e1c;
@@ -11,63 +11,81 @@
   --off-white: #faf8f7;
   --just-white: #ffffff;
 }
-@media (max-width: 600px) {
-  #navgetquote {
-    width: 100%;
-    margin: 0;
-    bottom: 40px;
-    position: fixed;
-  }
-  #navgetquote .btn {
-    width: 30px;
-  }
-}
 html {
   min-width: 320px;
 }
 .navbar {
   background-color: rgb(32, 30, 28);
+  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
   padding-top: 0;
   padding-bottom: 0;
+  height: 55px;
 }
-.nav-item .nav-link {
-  color: #ffffff;
+
+.navbar-nav .nav-link {
+  color: white;
+}
+.navbar-nav a:focus {
+  color: green;
+}
+.navbar-nav a:hover {
+  color: white;
+}
+.navbar-nav a:active {
+  color: white;
+}
+
+.navbar-nav a.selected {
+  /* color: var(--primary-blue); */
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: var(--primary-blue);
+  text-decoration-thickness: 4px;
+}
+
+.navbar-empty {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+}
+.navbar-brand {
+  position: fixed;
+  top: 0;
 }
 .navbar-brand img {
   width: 200px;
 }
-
-.container {
-  max-width: 1300px;
+.navbar-empty {
+  width: 200px;
 }
+main {
+  width: 100%;
+  height: auto;
+  background-color: var(--off-white);
+  margin-top: 55px;
+}
+/* #home {
+  position: relative;
+  overflow: hidden;
+} */
+
 .slide-image {
   height: 100vh;
   background-size: cover;
   background-position: center;
 }
 
-/* Hero section style */
-#home {
-  position: relative;
-  overflow: hidden;
-  padding-top: 65px;
-}
-main {
-  width: 100%;
-  height: auto;
-  background-color: var(--off-white);
-}
 .carousel-fade .carousel-inner .carousel-item {
   height: 90vh;
   background-position: center;
   background-size: cover;
 }
 
-.carousel-fade .carousel-inner .carousel-item::before {
+/* .carousel-fade .carousel-inner .carousel-item::before {
   content: "";
   display: block;
   position: absolute;
@@ -77,8 +95,8 @@ main {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Set opacity for the overlay */
-}
+  background-color: rgba(0, 0, 0, 0.5); 
+} */
 .carousel-caption {
   position: absolute;
   top: 50%;
@@ -104,19 +122,16 @@ main {
 }
 
 .carousel-fade .carousel-indicators li {
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.5
-  ); /* Set the background color of the indicators with opacity */
+  background-color: rgba(255, 255, 255, 0.5);
   border: none;
   width: 12px;
   height: 12px;
   margin: 0 6px;
   cursor: pointer;
 }
-
+.container {
+  max-width: 1300px;
+}
 .title {
   font-weight: bold;
   font-size: 2.5rem;
