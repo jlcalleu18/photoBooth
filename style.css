@@ -30,21 +30,20 @@ html {
   color: white;
 }
 .navbar-nav a:focus {
-  color: green;
+  color: white;
 }
 .navbar-nav a:hover {
   color: white;
+  font-weight: bold;
 }
 .navbar-nav a:active {
   color: white;
 }
 
 .navbar-nav a.selected {
-  /* color: var(--primary-blue); */
-  font-weight: bold;
   text-decoration: underline;
-  text-decoration-color: var(--primary-blue);
-  text-decoration-thickness: 4px;
+  text-decoration-color: var(--primary-gold);
+  text-decoration-thickness: 3px;
 }
 
 .navbar-empty {
