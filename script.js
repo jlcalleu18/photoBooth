@@ -65,3 +65,14 @@
 //   if (window.addEventListener) { window.addEventListener('DOMMouseScroll', wheel, false); }
 //   window.onmousewheel = document.onmousewheel = wheel;
 // });
+
+
+
+const menu = document.querySelector('#mobile-menu');
+const menulinks = document.querySelector('.navbar_nav')
+
+const mobileMenu = () => {
+  menu.classList.toggle('is-active');
+  menulinks.classList.toggle('active');
+};
+menu.addEventListener('click', mobileMenu);

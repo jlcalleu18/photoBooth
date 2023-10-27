@@ -22,32 +22,69 @@
 html {
   min-width: 320px;
 }
-
-.navbar {
-  background-color: rgb(32, 30, 28);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 999;
-  font-size: 1.2rem;
+header {
+  overflow: visible;
 }
-
+.nav_bar {
+  background-color: rgb(32, 30, 28);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+}
+.container_fluid {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1600px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 50px;
+  padding-left: 50px;
+}
 /* ------logo-------- */
 .navbar-empty {
   width: 200px;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-right: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 20px;
 }
-.navbar-brand {
+.navbar_brand {
   position: fixed;
-  top: 0;
+  top: 15px;
 }
-.navbar-brand img {
+.navbar_brand img {
   width: 200px;
 }
+.custom-toggler {
+  position: absolute;
+}
+.navbar_nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+}
 
-.nav-link {
+.nav_item {
+  height: 80px;
+}
+.nav_link {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 125px;
@@ -55,28 +92,43 @@ html {
   height: 100%;
 }
 
-.navbar-nav .nav-link {
-  color: white;
-}
-
-.navbar-nav a:hover {
+.nav_link:hover {
   color: var(--primary-gold);
-  /* font-weight: bold; */
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
-.navbar-nav a.selected {
-  text-decoration: underline;
-  text-decoration-color: var(--primary-gold);
-  text-decoration-thickness: 3px;
+section {
+  margin-top: 80px;
 }
 
-main {
+#navgetquote {
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+#button {
+  width: 160;
+  margin-left: 20px;
+  margin-right: 20px;
+  align-items: center;
+}
+#navgetquote .btn {
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* .custom-toggler{
+  position: absolute;
+} */
+
+/* main {
   width: 100%;
-  height: auto;
+
   background-color: var(--off-white);
-  margin-top: 55px;
-}
+  margin-top: 10px;
+} */
 
 .slide-image {
   height: 100vh;

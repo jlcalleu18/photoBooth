@@ -8,9 +8,9 @@
   <!-- Add Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="css/tablet.css" media="(max-width: 930px)" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="css/tablet.css" media="(max-width: 991px)" />
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+  
 </head>
 
 <body>
@@ -18,36 +18,40 @@
 
 
 
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+    <nav class="nav_bar">
+      <div class="container_fluid">
+        <a class="navbar_brand" href="#">
           <img src="img/SJ-Photo-Booth-words.png" alt="SJ PhotoBooth" class="d-inline-block align-top" />
         </a>
         <div class="navbar-empty" href="#">
         </div>
       
-        <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" id="about-page" href="#home">About us<span class="sr-only">(current)</span></a>
+        <div 
+        id="mobile-menu"
+        class="custom-toggler" 
+  
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+          <ul class="navbar_nav">
+            <li class="nav_item">
+              <a class="nav_link" id="about-page" href="#home">About us<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" id="service-page" href="#services">Services</a>
+            <li class="nav_item">
+              <a class="nav_link " id="service-page" href="#services">Services</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" id="feature-page" href="#portfolio">Features</a>
+            <li class="nav_item">
+              <a class="nav_link" id="feature-page" href="#portfolio">Features</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" id="events-page" href="#contact">Events</a>
+            <li class="nav_item">
+              <a class="nav_link" id="events-page" href="#contact">Events</a>
             </li>
           </ul>
-          </div>
           <div id="navgetquote">
-            <button onclick="location.href='#contact'"  type="button" class="btn btn-outline-primary " >GET QUOTE</button>
+            <button onclick="location.href='#contact'" id="button" type="button" class="btn btn-outline-primary " >GET QUOTE</button>
           </div>
       </div>
     </nav>
@@ -55,7 +59,7 @@
 
 
   </header>
-  
+
   <main>
     <section id="home" class="text-light text-center">
       <!-- Slide show background -->
@@ -227,9 +231,10 @@
   </footer>
 
   <!-- Add Bootstrap JS and jQuery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

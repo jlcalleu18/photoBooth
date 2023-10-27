@@ -1,17 +1,91 @@
+:root {
+  --primary-blue: #3c6bca;
+  --primary-gold: #eab105;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #201e1c;
+  --black: #282623;
+  --grey: #bababa;
+  --off-white: #faf8f7;
+  --just-white: #ffffff;
+}
+.container_fluid {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1600px;
+  padding: 0;
+}
+.navbar_nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  /* padding-top: 20px; */
+  /* padding-bottom: 20px; */
+  width: 100%;
+  position: absolute;
 
-.custom-toggler {
-  border-color: white;
+  top: -1000px;
+  opacity: 1;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+.navbar_nav.active {
+  background-color: var(--warm-black);
+  top: 100%;
+  opacity: 1;
+  transition: all 0.5s ease;
+  z-index: 99;
+  height: 30vh;
+  font-size: 1.2rem;
 }
 
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+.nav_item {
+  width: 100%;
+}
+.nav_link {
+  text-align: center;
+  width: 100%;
+  /* display: table;  */
+  padding-bottom: 1rem;
+}
+.navbar_brand {
+  position: fixed;
+  top: 15px;
+  left: 5%;
+}
+.custom-toggler .bar {
+  width: 25px;
+  height: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s ease-in-out;
+  background: #ffffff;
+  display: block;
+  cursor: pointer;
 }
 
-.nav-link {
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
+#mobile-menu {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  transform: translate(5%, 20%);
+}
 
+#mobile-menu.is-active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#mobile-menu.is-active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#mobile-menu.is-active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 #navgetquote {
@@ -29,7 +103,7 @@
   font-weight: bold;
 }
 .btn-outline-primary {
-  background-color: var(--primary-blue);
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 20px;
