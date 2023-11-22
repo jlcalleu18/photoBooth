@@ -21,6 +21,7 @@
 
 html {
   min-width: 320px;
+  
 }
 /* header {
   overflow: visible;
@@ -43,7 +44,7 @@ html {
   height: 80px;
   z-index: 1;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
@@ -210,14 +211,15 @@ section {
 
 /* ------------------      Description      ------------------ */
 .container {
-  max-width: 1300px;
+  max-width: 1400px;
 }
 .title {
   font-weight: bold;
   font-size: 2.5rem;
 }
 #description {
-  padding-top: 70px;
+  margin-top: 50px;
+  padding-top: 100px;
 }
 
 /* ------------------      Service      ------------------ */
