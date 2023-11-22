@@ -53,7 +53,7 @@ header {
   padding-right: 50px;
   padding-left: 50px;
 }
-/* ------logo-------- */
+/* ------logo words-------- */
 .navbar-empty {
   width: 200px;
   display: flex;
@@ -126,6 +126,12 @@ header {
   margin-top: 10px;
 } */
 /* -------------------------     Main     ----------------------------------- */
+main {
+  width: 100%;
+  height: auto;
+  background-color: var(--off-white);
+  margin-top: 55px;
+}
 section {
   min-height: 70vh;
   padding-top: 80px;
@@ -211,7 +217,7 @@ section {
   font-weight: bold;
   font-size: 2.5rem;
 }
-#description{
+#description {
   padding-top: 70px;
 }
 
