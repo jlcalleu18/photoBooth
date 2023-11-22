@@ -22,9 +22,9 @@
 html {
   min-width: 320px;
 }
-header {
+/* header {
   overflow: visible;
-}
+} */
 .nav_bar {
   background-color: rgb(32, 30, 28);
   height: 80px;
@@ -126,19 +126,18 @@ header {
   margin-top: 10px;
 } */
 /* -------------------------     Main     ----------------------------------- */
-main {
+/* main {
   width: 100%;
   height: auto;
   background-color: var(--off-white);
-  margin-top: 55px;
-}
+} */
 section {
   min-height: 70vh;
   padding-top: 80px;
   scroll-margin-top: 80px;
 }
 .slide-image {
-  height: 100vh;
+  height: 100px;
   background-size: cover;
   background-position: center;
 }
