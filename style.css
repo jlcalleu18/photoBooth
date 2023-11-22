@@ -99,7 +99,8 @@ header {
 }
 
 section {
-  margin-top: 80px;
+  /* display: flex; */
+  min-height: 70vh;
 }
 
 #navgetquote {
