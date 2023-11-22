@@ -35,7 +35,7 @@ header {
   font-size: 1.2rem;
   position: fixed;
   top: 0px;
-  z-index: 999;
+  z-index: 1000;
 }
 .container_fluid {
   display: flex;
@@ -98,18 +98,13 @@ header {
   text-decoration: none;
 }
 
-section {
-  /* display: flex; */
-  min-height: 70vh;
-}
-
 #navgetquote {
   align-items: center;
   justify-content: center;
   padding: 10px 0;
 }
 #button {
-  width: 160;
+  width: 160px;
   margin-left: 20px;
   margin-right: 20px;
   align-items: center;
@@ -130,7 +125,12 @@ section {
   background-color: var(--off-white);
   margin-top: 10px;
 } */
-
+/* -------------------------     Main     ----------------------------------- */
+section {
+  min-height: 70vh;
+  padding-top: 80px;
+  scroll-margin-top: 80px;
+}
 .slide-image {
   height: 100vh;
   background-size: cover;

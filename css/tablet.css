@@ -38,7 +38,7 @@
   opacity: 1;
   transition: all 0.5s ease;
   z-index: 99;
-  height: 30vh;
+  min-height: 40vh;
   font-size: 1.2rem;
 }
 
