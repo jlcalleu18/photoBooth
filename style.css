@@ -21,7 +21,6 @@
 
 html {
   min-width: 320px;
-  
 }
 /* header {
   overflow: visible;
@@ -199,12 +198,10 @@ section {
 
 .logo {
   position: absolute;
-  top: 89%;
-  /* left: 20%; */
-  /* text-align: center; */
-  /* color: #fff; */
+  bottom: -75px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
-  width: 100%;
 }
 .logo img {
   width: 180px;
