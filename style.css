@@ -209,6 +209,17 @@ section {
 /* ------------------      Description      ------------------ */
 .container {
   max-width: 1400px;
+  padding-left: 50px;
+  padding-right: 100px;
+
+}
+#row-desc{
+  align-items: center;
+}
+.desc-col{
+  text-align: center;
+  min-width: 200px;
+  
 }
 .title {
   font-weight: bold;
@@ -218,7 +229,17 @@ section {
   margin-top: 50px;
   padding-top: 100px;
 }
+.logo-SJ{
+  position: absolute;
+  bottom: -700px;
+  /* left: 50%;
+  transform: translateX(-50%); */
+  z-index: 1;
+}
 
+.logo-SJ img {
+  width: 400px;
+}
 /* ------------------      Service      ------------------ */
 
 .service-dark-bg {
