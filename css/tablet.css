@@ -144,3 +144,9 @@ section {
   /* max-height: 320px; */
 }
 
+.portfolio-text {
+  margin: 20px 0;
+  padding: 0 20px;
+  font-size: 1.2rem;
+}
+
