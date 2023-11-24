@@ -241,7 +241,7 @@ section {
 
 .logo-SJ {
   position: absolute;
-  bottom: -600px;
+  bottom: -50px;
   left: 20%;
   transform: translateX(-50%);
   z-index: 1;
