@@ -122,10 +122,25 @@ section {
 
 
 /* ------------------       Logo         ------------------ */
+.relative-position {
+  position: relative;
+}
 .logo {
   position: absolute;
-  bottom: -50px;
+  bottom: -75px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
 }
+/* ------------------       Logo         ------------------ */
+
+.container-desc {
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+#row-desc {
+  /* max-height: 320px; */
+}
+

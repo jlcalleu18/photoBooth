@@ -195,7 +195,9 @@ section {
 }
 
 /* ------------------      logo      ------------------ */
-
+.relative-position {
+  position: relative;
+}
 .logo {
   position: absolute;
   bottom: -75px;
@@ -209,31 +211,39 @@ section {
 /* ------------------      Description      ------------------ */
 .container {
   max-width: 1400px;
+}
+
+#description {
+  min-height: 60vh;
+  margin-top: 50px;
+  padding-top: 100px;
+}
+
+
+.container-desc {
+  padding-top: 80px;
   padding-left: 50px;
   padding-right: 100px;
-
 }
-#row-desc{
+#row-desc {
   align-items: center;
 }
-.desc-col{
+
+.desc-col {
   text-align: center;
-  min-width: 200px;
-  
+  /* min-width: 200px; */
 }
+
 .title {
   font-weight: bold;
   font-size: 2.5rem;
 }
-#description {
-  margin-top: 50px;
-  padding-top: 100px;
-}
-.logo-SJ{
+
+.logo-SJ {
   position: absolute;
-  bottom: -700px;
-  /* left: 50%;
-  transform: translateX(-50%); */
+  bottom: -600px;
+  left: 20%;
+  transform: translateX(-50%);
   z-index: 1;
 }
 
