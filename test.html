@@ -1,190 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SJ Photo Booth</title>
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="teststyle.css" />
-  </head>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Website Example</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="img/SJ-Photo-Booth-words.png"
-              alt="SJ PhotoBooth"
-              class="d-inline-block align-top"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#home"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="ml-auto">
-            <button type="button" class="btn btn-outline-primary">
-              Get Quote
-            </button>
-          </div>
-        </div>
-      </nav>
-    </header>
+  .video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
 
-    <section id="services" class="bg-light">
-      <div class="container">
-        <h2 class="text-center mb-5">Our Services</h2>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card">
-              <img src="img/gallery.jpg" class="card-img-top" alt="Service 1" />
-              <div class="card-body">
-                <h5 class="card-title">High-Quality Prints</h5>
-                <p class="card-text">
-                  We provide high-quality prints that capture your special
-                  moments with excellent clarity and color.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <img src="service2.jpg" class="card-img-top" alt="Service 2" />
-              <div class="card-body">
-                <h5 class="card-title">Customizable Templates</h5>
-                <p class="card-text">
-                  Choose from a variety of customizable templates for your photo
-                  prints to match your event theme or branding.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <img src="service3.jpg" class="card-img-top" alt="Service 3" />
-              <div class="card-body">
-                <h5 class="card-title">Fun Props</h5>
-                <p class="card-text">
-                  We provide a wide selection of fun and unique props for your
-                  guests to use in their photos, adding an extra element of fun
-                  to your event.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="gallery">
-      <div class="container">
-        <h2 class="text-center mb-5">Gallery</h2>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="gallery-item">
-              <img src="gallery1.jpg" alt="Gallery 1" class="img-fluid" />
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="gallery-item">
-              <img src="gallery2.jpg" alt="Gallery 2" class="img-fluid" />
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="gallery-item">
-              <img src="gallery3.jpg" alt="Gallery 3" class="img-fluid" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  .content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    <section id="contact" class="bg-light">
-      <div class="container">
-        <h2 class="text-center mb-5">Contact Us</h2>
-        <div class="row">
-          <div class="col-lg-6">
-            <form action="contact.php" method="post">
-              <div class="form-group">
-                <input
-                  type="text"
-                  name="name"
-                  class="form-control"
-                  placeholder="Name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  name="email"
-                  class="form-control"
-                  placeholder="Email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  name="message"
-                  class="form-control"
-                  rows="5"
-                  placeholder="Message"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">
-                Send Message
-              </button>
-            </form>
-          </div>
-          <div class="col-lg-6">
-            <h4>Contact Information</h4>
-            <p><strong>Phone:</strong> (123) 456-7890</p>
-            <p><strong>Email:</strong> info@sjphotobooth.com</p>
-            <p><strong>Address:</strong> 1234 Main St, San Jose, CA 95101</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  .button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
 
-    <footer class="footer text-center">
-      <p>&copy; 2023 SJ Photo Booth. All rights reserved.</p>
-    </footer>
+  .button:hover {
+    transform: scale(1.1);
+  }
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 20px;
+  }
+
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+</style>
+</head>
+<body>
+
+<div class="video-background">
+  <video autoplay muted loop id="myVideo">
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+</div>
+
+<div class="content">
+  <h1>Welcome to Our Dynamic Website</h1>
+  <p>Experience the interactivity and dynamics.</p>
+  <button class="button">Click Me!</button>
+  
+  <label class="switch">
+    <input type="checkbox">
+    <span class="slider"></span>
+  </label>
+</div>
+
+</body>
 </html>

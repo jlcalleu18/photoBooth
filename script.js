@@ -69,6 +69,12 @@
 
 
 const menu = document.querySelector('#mobile-menu');
+const about_page = document.querySelector('#about-page');
+const service_page = document.querySelector('#service-page');
+const feature_page = document.querySelector('#feature-page');
+const events_page = document.querySelector('#events-page');
+
+
 const menulinks = document.querySelector('.navbar_nav')
 
 const mobileMenu = () => {
@@ -76,3 +82,8 @@ const mobileMenu = () => {
   menulinks.classList.toggle('active');
 };
 menu.addEventListener('click', mobileMenu);
+about_page.addEventListener('click', mobileMenu)
+service_page.addEventListener('click', mobileMenu)
+feature_page.addEventListener('click', mobileMenu)
+events_page.addEventListener('click',mobileMenu)
+
