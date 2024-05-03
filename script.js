@@ -87,3 +87,6 @@ service_page.addEventListener('click', mobileMenu)
 feature_page.addEventListener('click', mobileMenu)
 events_page.addEventListener('click',mobileMenu)
 
+document.querySelector('.dots-animation').addEventListener('click', function() {
+  this.style.animationPlayState = 'paused'; // Toggle pause
+});
