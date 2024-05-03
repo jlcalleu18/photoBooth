@@ -1,0 +1,354 @@
+/* Custom CSS for photobooth website */
+
+:root {
+  --primary-blue: #3c6bca;
+  --primary-gold: #eab105;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #201e1c;
+  --black: #282623;
+  --grey: #bababa;
+  --off-white: #faf8f7;
+  --just-white: #ffffff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  min-width: 320px;
+}
+/* header {
+  overflow: visible;
+} */
+.nav_bar {
+  background-color: rgb(32, 30, 28);
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+}
+.container_fluid {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1400px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+/* ------logo words-------- */
+.navbar-empty {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.navbar_brand {
+  position: fixed;
+  top: 12px;
+}
+.navbar_brand img {
+  width: 200px;
+}
+.navbar_brand:hover {
+  transform: scale(1.1);
+}
+
+.custom-toggler {
+  position: absolute;
+}
+
+.navbar_nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.nav_link:hover {
+  color: var(--primary-gold);
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+#navgetquote {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* padding: 10px 0; */
+}
+#button {
+  padding: 5px 30px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#button:hover {
+  transform: scale(1.1);
+}
+
+
+.animation-div {
+  position: relative;
+  width: 100%;
+  height: 500px; 
+  overflow: hidden;
+  background-color: #f0f0f0; 
+}
+
+.dots-animation {
+  position: absolute;
+  width: 20px; /* Size of the dots */
+  height: 20px; /* Size of the dots */
+  background-color: #3498db; /* Color of the dots */
+  border-radius: 50%; /* Makes the dot circular */
+  animation: moveAround 10s infinite alternate ease-in-out;
+}
+
+/* Define the keyframes for moving around */
+@keyframes moveAround {
+  0% { transform: translate(0px, 0px); }
+  25% { transform: translate(900px, 0px); } /* Right */
+  50% { transform: translate(500px, 500px); } /* Down */
+  75% { transform: translate(0px, 300px); } /* Left */
+  100% { transform: translate(0px, 0px); } /* Back to start */
+}
+
+
+.dots-animation:nth-child(1) {
+  animation-duration: 8s; /* Faster */
+}
+
+.dots-animation:nth-child(2) {
+  animation-delay: 2s; /* Starts later */
+  background-color: red; /* Different color */
+}
+
+.dots-animation:nth-child(3) {
+  animation-name: differentPath;
+}
+
+@keyframes differentPath {
+  from { transform: translate(0, 0); }
+  to { transform: translate(200px, 500px); }
+}
+
+
+
+
+
+
+/* -------------------------     Main     ----------------------------------- */
+/* main {
+  width: 100%;
+  height: auto;
+  background-color: var(--off-white);
+} */
+section {
+  min-height: 70vh;
+  padding-top: 70px;
+  scroll-margin-top: 80px;
+}
+.slide-image {
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-fade .carousel-inner .carousel-item {
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+}
+
+/* .carousel-fade .carousel-inner .carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+} */
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  width: 100%;
+}
+
+.carousel-item .carousel-caption h1 {
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.carousel-fade .carousel-inner .carousel-item .carousel-caption p {
+  font-size: 1.5rem;
+}
+.carousel-fade .carousel-inner .carousel-item .carousel-caption .btn {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.carousel-fade .carousel-indicators li {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+/* ------------------      logo      ------------------ */
+.relative-position {
+  position: relative;
+}
+.logo {
+  position: absolute;
+  bottom: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.logo img {
+  width: 180px;
+}
+/* ------------------      Description      ------------------ */
+.container {
+  max-width: 1400px;
+}
+
+#description {
+  min-height: 60vh;
+  margin-top: 50px;
+  padding-top: 100px;
+}
+
+
+.container-desc {
+  padding-top: 80px;
+  padding-left: 50px;
+  padding-right: 100px;
+}
+#row-desc {
+  align-items: center;
+}
+
+.desc-col {
+  text-align: center;
+  /* min-width: 200px; */
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.logo-SJ {
+  position: absolute;
+  bottom: -50px;
+  left: 20%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.logo-SJ img {
+  width: 400px;
+}
+/* ------------------      Service      ------------------ */
+
+.service-dark-bg {
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  background-color: var(--warm-black);
+  color: var(--just-white);
+}
+
+.service-detail--card {
+  width: 90%;
+  min-width: 288px;
+  max-width: 320px;
+  min-height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--black);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.service-card-h4 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
+
+.portfolio-title {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 0px 90px;
+  color: var(--black);
+}
+
+.portfolio-text {
+  margin: 20px 0;
+  padding: 0 90px;
+  font-size: 1.2rem;
+}
+.portfolio-detail--card {
+  min-width: 140px;
+  max-width: 380px;
+  min-height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+}
+.portfolio-card-h4 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--black);
+}
