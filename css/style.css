@@ -268,8 +268,6 @@ section {
 
 .container-desc {
   padding-top: 80px;
-  padding-left: 50px;
-  padding-right: 100px;
 }
 #row-desc {
   align-items: center;
@@ -351,4 +349,28 @@ section {
   font-weight: bold;
   line-height: 1.8rem;
   color: var(--black);
+}
+
+
+.cursive-text {
+  margin-top: 20px;
+  font-family: 'Bungasai', cursive;  
+  font-size: 1.4rem;
+
+}
+
+.instagram-icon {
+  display: inline-block;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.instagram-img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.instagram-icon:hover .instagram-img {
+  transform: scale(1.1);
+  opacity: 0.8;
 }
