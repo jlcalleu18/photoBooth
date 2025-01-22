@@ -385,7 +385,6 @@ section {
 
 .contact-details {
   max-width: 600px;
-  min-width: 250px;
 }
 
 .illustrations {
@@ -393,7 +392,6 @@ section {
   /* flex-wrap: wrap; */
   justify-content: center; /* Centers illustrations horizontally */
   margin-top: 20px;
-  align-items: center;
 }
 
 .contact-illustration {
