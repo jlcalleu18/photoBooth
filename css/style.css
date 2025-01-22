@@ -385,6 +385,7 @@ section {
 
 .contact-details {
   max-width: 600px;
+  min-width: 250px;
 }
 
 .illustrations {
