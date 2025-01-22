@@ -105,11 +105,22 @@
 
 /* ------------------       Section 1          ------------------ */
 section {
-  min-height: 70vh;
+  min-height:60vh;
   padding-top: 55px;
   scroll-margin-top: 55px;
 }
 
+#description {
+  padding-top: 50px;
+}
+
+#description p {
+  font-size: 1rem;
+}
+
+#img-Jorge img{
+  max-width: 85%;
+}
 
 /* ------------------       Logo         ------------------ */
 .relative-position {
@@ -131,10 +142,10 @@ section {
 
 }
 
-
 .portfolio-text {
   margin: 20px 0;
   padding: 0 20px;
   font-size: 1.2rem;
 }
+
 

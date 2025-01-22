@@ -172,13 +172,11 @@ html {
 
 
 /* -------------------------     Main     ----------------------------------- */
-/* main {
-  width: 100%;
-  height: auto;
+main {
   background-color: var(--off-white);
-} */
+}
 section {
-  min-height: 70vh;
+  min-height: 60vh;
   padding-top: 70px;
   scroll-margin-top: 80px;
 }
@@ -258,24 +256,28 @@ section {
 .container {
   max-width: 1400px;
 }
-
 #description {
   min-height: 60vh;
-  margin-top: 50px;
-  padding-top: 100px;
 }
-
 
 .container-desc {
-  padding-top: 80px;
-}
-#row-desc {
-  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
+#description h3 {
+  font-size: 2rem;
+}
+
+#description p {
+  font-size: 1.1rem;
+}
+
+#img-Jorge img{
+  max-width: 70%;
+}
 .desc-col {
   text-align: center;
-  /* min-width: 200px; */
 }
 
 .title {
@@ -374,3 +376,31 @@ section {
   transform: scale(1.1);
   opacity: 0.8;
 }
+
+/* --------contact----------- */
+/* General Styles */
+#contact {
+  padding: 60px 20px;
+}
+
+.contact-details {
+  max-width: 600px;
+}
+
+.illustrations {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center; /* Centers illustrations horizontally */
+  margin-top: 20px;
+  align-items: center;
+}
+
+.contact-illustration {
+  margin: 10px; /* Adds space between illustrations */
+}
+
+.illustration-img {
+  max-width: 250px; /* Set a max width for the images */
+  height: auto; /* Maintain aspect ratio */
+}
+
