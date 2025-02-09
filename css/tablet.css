@@ -151,3 +151,25 @@ section {
 .illustration-img {
   max-width: 150px; /* Set a max width for the images */
 }
+
+
+
+
+
+.pricing-card, .printer-card {
+  margin-bottom: 20px;
+}
+
+.printer-card {
+  order: 4; /* Moves it to be the fourth card on mobile */
+}
+
+.btn-warning {
+  width: 40%;
+}
+/* 📱 Ensure full responsiveness */
+@media (max-width: 768px) {
+  .btn-warning {
+    width: 100%;
+  }
+}

@@ -403,3 +403,97 @@ section {
   height: auto; /* Maintain aspect ratio */
 }
 
+
+
+
+
+
+
+
+/* 📱 Mobile-Friendly Design */
+#pricing {
+  background-color: #f9f9f9;
+  padding: 40px 15px;
+}
+
+.pricing-card, .printer-card {
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background: #fff;
+  padding: 20px;
+}
+
+.pricing-card:hover, .printer-card:hover {
+  transform: scale(1.05);
+}
+
+.package-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--primary-blue);
+}
+
+.price-print{
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-blue);
+}
+.price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-gold)
+}
+
+.duration {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.package-features {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.package-features li {
+  padding: 5px 0;
+}
+
+/* 📱 Make buttons mobile-friendly */
+.btn-primary, .btn-warning {
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: bold;
+}
+.btn-warning {
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 8px;
+  width: 50%;
+  font-weight: bold;
+}
+
+.btn-warning {
+  background-color: #ffcc00;
+  width: 40%;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-blue);
+}
+
+.btn-warning:hover {
+  background-color: #e6b800;
+}
+
+/* 🔥 Printed Photos Upgrade */
+.printer-card {
+  border: 2px solid var(--primary-gold);
+  background: #fff7e6;
+  text-align: center;
+}
