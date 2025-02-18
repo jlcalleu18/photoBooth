@@ -108,10 +108,10 @@ html {
 }
 #button {
   padding: 5px 30px;
-  background-color: #007BFF;
-  color: white;
+  background-color: var(--primary-blue);;
+  color: #fff;;
   border: none;
-  border-radius: 7px;
+  border-radius: 10px;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
@@ -411,37 +411,66 @@ section {
 /* ----------------------- Design Pricing --------------------*/
 
 #pricing {
-  background-color: #f9f9f9;
-  padding: 40px 15px;
+  background: linear-gradient(135deg, #fdfcfb, #e2d1c3); /* Soft gradient */
+  padding: 60px 15px;
+  text-align: center;
+}
+#printer {
+padding: 0;
+}
+
+.container {
+  padding-top: 40px;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .pricing-card, .printer-card {
   border-radius: 15px;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  background: #fff;
-  padding: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .pricing-card:hover, .printer-card:hover {
   transform: scale(1.05);
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+ /* 🔥 Highlight Best Value Package */
+.best-value {
+  border: 3px solid var(--primary-gold);
+  background: #fffbe6;
+  position: relative;
+}
+
+.best-value::before {
+  content: "⭐ Most Popular";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary-gold);
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 .package-title {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bold;
   color: var(--primary-blue);
 }
 
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-gold);
+}
 .price-print{
   font-size: 1.8rem;
   font-weight: bold;
   color: var(--primary-blue);
-}
-.price {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: var(--primary-gold)
 }
 
 .duration {
@@ -449,6 +478,8 @@ section {
   font-weight: 600;
   color: #333;
 }
+
+
 
 .package-features {
   list-style: none;
@@ -458,32 +489,30 @@ section {
 }
 
 .package-features li {
-  padding: 5px 0;
+  padding: 2px 0;
 }
 
-/* 📱 Make buttons mobile-friendly */
+/* ✅ Improve Buttons */
 .btn-primary, .btn-warning {
-  font-size: 1rem;
-  padding: 12px;
-  border-radius: 8px;
+  font-size: 1.1rem;
+  padding: 14px;
+  border-radius: 10px;
   width: 100%;
   font-weight: bold;
 }
-.btn-warning {
-  font-size: 1rem;
-  padding: 12px;
-  border-radius: 8px;
-  width: 50%;
-  font-weight: bold;
+
+.btn-primary {
+  background: var(--primary-blue);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: var(--secondary-blue);
 }
 
 .btn-warning {
   background-color: #ffcc00;
   width: 40%;
-}
-
-.btn-primary:hover {
-  background-color: var(--secondary-blue);
 }
 
 .btn-warning:hover {
@@ -495,4 +524,36 @@ section {
   border: 2px solid var(--primary-gold);
   background: #fff7e6;
   text-align: center;
+} 
+
+
+
+
+
+
+/* 🔥 Improve Add-ons Section */
+.add-ons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
 }
+
+.add-on-item {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.add-on-item p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.add-on-item strong {
+  color: var(--primary-gold);
+  font-size: 1.2rem;
+}
+
