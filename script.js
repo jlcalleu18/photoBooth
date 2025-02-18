@@ -1,92 +1,112 @@
-// $(document).ready(function () {
-//   //Click function
-//   // Add smooth scrolling to all links on click
-//   // $(document).on('click', "a.nav-link", function (e) {
+document.addEventListener("DOMContentLoaded", function () {
+  // 🎯 Fix: Only run the menu code if the elements exist
+  const menu = document.querySelector("#mobile-menu");
+  const about_page = document.querySelector("#about-page");
+  const service_page = document.querySelector("#service-page");
+  const feature_page = document.querySelector("#feature-page");
+  const events_page = document.querySelector("#events-page");
 
-//   //   // Make sure this.hash has a value before overriding default behavior
-//   //   if (this.hash !== "") {
-//   //     // Prevent default anchor click behavior
-//   //     e.preventDefault();
-//   //     // Store hash
-//   //     var hash = this.hash;
-//   //     $('a.nav-link').removeClass('selected');
-//   //     $(this).toggleClass('selected');
-//   //     // Using jQuery's animate() method to add smooth page scroll
-//   //     // The optional number (800) specifies the number of   milliseconds it takes to scroll to the specified area
-//   //     $('html, body').animate({
-//   //       scrollTop: $(hash).offset().top
-//   //     }, 600, function () {
-//   //       // Add hash (#) to URL when done scrolling (default click behavior)
-//   //       window.location.hash = hash;
-//   //     });
-//   //   } // End if
-//   // });
-//   //Scroll Function
-//   // adds and removes selected class when the section is reached with the scroll
-//   $(document).bind('scroll', function (e) {
-//     $('section').each(function () {
-//       if ($(this).offset().top < window.pageYOffset + 10 && $(this).offset().top + $(this).height() > window.pageYOffset + 10) {
-//         window.location.hash = $(this).attr('id');
-//         if ($(this).attr('id') == "home") {
-//           $('a.nav-link').removeClass('selected');
-//           $("#nav1").toggleClass('selected')
-//         } else if ($(this).attr('id') == "services") {
-//           $('a.nav-link').removeClass('selected');
-//           $("#nav2").toggleClass('selected')
-//         } else if ($(this).attr('id') == "portfolio") {
-//           $('a.nav-link').removeClass('selected');
-//           $("#nav3").toggleClass('selected')
-//         } else if ($(this).attr('id') == "contact") {
-//           $('a.nav-link').removeClass('selected');
-//           $("#nav4").toggleClass('selected')
-//         }
-//       }
-//     });
-//   });
+  const menulinks = document.querySelector(".navbar_nav");
 
-//   //Scroll Bug function
-//   // fixes the bug that caused scrolling up to be faster
-//   function wheel(event) {
-//     var delta = 0;
-//     if (event.wheelDelta) { (delta = event.wheelDelta / 120); }
-//     else if (event.detail) { (delta = -event.detail / 3); }
-//     handle(delta);
-//     //commented out because it caused bug in DOM
-//     // if (event.preventDefault) {(event.preventDefault());}
-//     // event.returnValue = false;
-//   }
-//   function handle(delta) {
-//     var time = 1000;
-//     var distance = 300;
-//     $('html, body').stop().animate({
-//       scrollTop: $(window).scrollTop() - (distance * delta)
-//     }, time);
-//   }
-//   if (window.addEventListener) { window.addEventListener('DOMMouseScroll', wheel, false); }
-//   window.onmousewheel = document.onmousewheel = wheel;
-// });
+  if (menu && menulinks) {
+      menu.addEventListener("click", function () {
+          menu.classList.toggle("is-active");
+          menulinks.classList.toggle("active");
+      });
+  }
 
+  // 🎯 Fix: Check if these elements exist before adding event listeners
+  if (about_page) about_page.addEventListener("click", mobileMenu);
+  if (service_page) service_page.addEventListener("click", mobileMenu);
+  if (feature_page) feature_page.addEventListener("click", mobileMenu);
+  if (events_page) events_page.addEventListener("click", mobileMenu);
 
+  function mobileMenu() {
+      if (menu && menulinks) {
+          menu.classList.toggle("is-active");
+          menulinks.classList.toggle("active");
+      }
+  }
 
-const menu = document.querySelector('#mobile-menu');
-const about_page = document.querySelector('#about-page');
-const service_page = document.querySelector('#service-page');
-const feature_page = document.querySelector('#feature-page');
-const events_page = document.querySelector('#events-page');
+  // Fix: Check if the animation class exists before adding an event
+  const dotsAnimation = document.querySelector(".dots-animation");
+  if (dotsAnimation) {
+      dotsAnimation.addEventListener("click", function () {
+          this.style.animationPlayState = "paused"; // Toggle pause
+      });
+  }
 
+  // 📸 Printer Package Functionality
+  const addPrinterBtn = document.getElementById("addPrinterBtn");
+  let printerAdded = false;
 
-const menulinks = document.querySelector('.navbar_nav')
+  // Printer Add-on Logic
+  if (addPrinterBtn) {
+      addPrinterBtn.addEventListener("click", function () {
+          const priceIncrease = 150; // Printer add-on price
+          const packages = document.querySelectorAll(".pricing-card .price");
+          const durationElements = document.querySelectorAll(".pricing-card .duration");
+          const featureLists = document.querySelectorAll(".pricing-card .package-features");
 
-const mobileMenu = () => {
-  menu.classList.toggle('is-active');
-  menulinks.classList.toggle('active');
-};
-menu.addEventListener('click', mobileMenu);
-about_page.addEventListener('click', mobileMenu)
-service_page.addEventListener('click', mobileMenu)
-feature_page.addEventListener('click', mobileMenu)
-events_page.addEventListener('click',mobileMenu)
+          packages.forEach((priceElement, index) => {
+              let basePrice = parseInt(priceElement.textContent.replace("$", ""));
+              let newPrice = printerAdded ? basePrice - priceIncrease : basePrice + priceIncrease;
 
-document.querySelector('.dots-animation').addEventListener('click', function() {
-  this.style.animationPlayState = 'paused'; // Toggle pause
+              // Update price
+              priceElement.textContent = `$${newPrice}`;
+
+              // Update duration text
+              durationElements[index].textContent = printerAdded
+                  ? durationElements[index].textContent.replace(" + Printer", "")
+                  : durationElements[index].textContent + " + Printer";
+
+              // Add or remove printer feature
+              let featureList = featureLists[index];
+              if (!printerAdded) {
+                  let printerFeature = document.createElement("li");
+                  printerFeature.textContent = "🖨 Includes Printed Photos";
+                  printerFeature.classList.add("printer-added");
+                  featureList.appendChild(printerFeature);
+              } else {
+                  let printerFeature = featureList.querySelector(".printer-added");
+                  if (printerFeature) {
+                      featureList.removeChild(printerFeature);
+                  }
+              }
+          });
+
+          // Toggle button text
+          addPrinterBtn.textContent = printerAdded ? "Add to Package" : "Remove Printer";
+
+          // Toggle state
+          printerAdded = !printerAdded;
+      });
+  }
+
+  // 📩 SMS DM Booking Functionality
+  const bookNowButtons = document.querySelectorAll(".book-now-btn");
+  const phoneNumber = "2017907108"; 
+
+  bookNowButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+          const packageCard = this.closest(".pricing-card");
+          const packageName = packageCard.querySelector(".package-title").textContent;
+          const packagePrice = packageCard.querySelector(".price").textContent;
+          const duration = packageCard.querySelector(".duration").textContent;
+
+          let message = `Hi SJ Photo Booth! I'm interested in booking the ${packageName} package for ${duration}.`;
+
+          // Encode message for URL
+        const encodedMessage = encodeURIComponent(message);
+        const smsLink = `sms:${phoneNumber}?&body=${encodedMessage}`;
+
+        // Open SMS app with pre-filled message
+        window.open(smsLink, "_blank");
+      });
+  });
+
+  document.getElementById("checkAvailabilityBtn").addEventListener("click", function () {
+    // Replace with your Google Calendar public link
+    window.open("https://calendar.google.com/calendar/u/2?cid=cGhvdG9ib290aHNqQGdtYWlsLmNvbQ", "_blank");
+});
 });

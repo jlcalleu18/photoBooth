@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SJ Photo Booth</title>
+  <!-- Add Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/tablet.css" media="(max-width: 991px)" />
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+
+</head>
+
+<body>
+  <header>
+    <nav class="nav_bar">
+      <div class="container_fluid">
+        <a class="navbar_brand" href="#">
+          <img src="img/SJ-Photo-Booth-words.png" alt="SJ PhotoBooth" class="d-inline-block align-top" />
+        </a>
+        <div class="navbar-empty" href="#">
+        </div>
+
+        <div id="mobile-menu" class="custom-toggler">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul id="navbar" class="navbar_nav">
+          <li class="nav_item">
+            <a class="nav_link" id="about-page" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link " id="service-page" href="#services">Services</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" id="feature-page" href="#portfolio">Features</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" id="events-page" href="#contact">Events</a>
+          </li>
+        </ul>
+        <div id="navgetquote">
+          <button id="checkAvailabilityBtn" class="button-availability" type="button">Check Availability</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-5">
+    <div class="container-pricing">
+      <h2 class="text-center title">Photo Booth Packages</h2>
+      <p class="text-center portfolio-text">
+        Choose the perfect package for your event and create unforgettable memories!
+      </p>
+      <!-- 🔥 Add a Printer Option (As Separate Column) -->
+      <div id="printer" class="col-md-12 col-12 mb-4">
+        <div class="card printer-card text-center">
+          <div class="card-body">
+            <h3 class="package-title">🔥 Upgrade Your Experience!</h3>
+            <h2 class="price">Printed Photos</h2>
+            <p class="price-print">$150</p>
+            <p class="duration">Add to Any Package</p>
+            <ul class="package-features">
+              <li>📸 Get high-quality prints instantly!</li>
+            </ul>
+            <button id="addPrinterBtn" class="btn btn-warning">Add to Package</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- BASIC PACKAGE -->
+        <div class="col-md-4 col-12 mb-4">
+          <div class="card pricing-card text-center">
+            <div class="card-body">
+              <h3 class="package-title">BASIC</h3>
+              <p class="price">$299</p>
+              <p class="duration">2 Hour Service</p>
+              <ul class="package-features">
+                <li>📸 Gifs, Boomerangs, Pictures</li>
+                <li>🎭 Photo Booth Props</li>
+                <li>💾 Online Photo Gallery</li>
+                <li>⚡ Instant Photo Sharing</li>
+                <li>🖼 Custom Digital Photo Frame</li>
+              </ul>
+              <button class="btn btn-primary book-now-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PREMIUM PACKAGE -->
+        <!-- Premium Package - Highlighted as Best Value -->
+        <div class="col-md-4 col-12 mb-4">
+          <div class="card pricing-card text-center best-value">
+            <div class="card-body">
+              <h3 class="package-title">PREMIUM <span class="best-deal">🔥</span></h3>
+              <p class="price">$399</p>
+              <p class="duration">3 Hour Service</p>
+              <ul class="package-features">
+                <li>📸 Gifs, Boomerangs, Pictures</li>
+                <li>🎭 Photo Booth Props</li>
+                <li>💾 Online Photo Gallery</li>
+                <li>⚡ Instant Photo Sharing</li>
+                <li>🖼 Custom Digital Photo Frame</li>
+              </ul>
+              <button class="btn btn-primary book-now-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- LUXURY PACKAGE -->
+        <div class="col-md-4 col-12 mb-4">
+          <div class="card pricing-card text-center">
+            <div class="card-body">
+              <h3 class="package-title">LUXURY</h3>
+              <p class="price">$499</p>
+              <p class="duration">4 Hour Service</p>
+              <ul class="package-features">
+                <li>📸 Gifs, Boomerangs, Pictures</li>
+                <li>🎭 Photo Booth Props</li>
+                <li>💾 Online Photo Gallery</li>
+                <li>⚡ Instant Photo Sharing</li>
+                <li>🖼 Custom Digital Photo Frame</li>
+              </ul>
+              <button class="btn btn-primary book-now-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Add-ons Section -->
+      <div class="text-center mt-4">
+        <h4>Add-ons</h4>
+        <div class="add-ons-grid">
+          <div class="add-on-item">
+            <p>🎨 Custom Backdrop</p>
+            <p><strong>$150</strong></p>
+          </div>
+          <div class="add-on-item">
+            <p>🎭 Custom Photo Booth Props</p>
+            <p><strong>$50</strong></p>
+          </div>
+          <div class="add-on-item">
+            <p>⏳ Additional Hour (Digital Only)</p>
+            <p><strong>$150</strong></p>
+          </div>
+          <div class="add-on-item">
+            <p>🖨 Additional Hour (With Printer)</p>
+            <p><strong>$200</strong></p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-3">
+    <div class="container">
+      <p>&copy; 2025 SJ PhotoBooth. All rights reserved.</p>
+    </div>
+  </footer>
+  
+
+  <!-- Bootstrap & JS -->
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+</body>
+
+</html>
