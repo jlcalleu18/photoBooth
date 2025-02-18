@@ -102,6 +102,11 @@
   /* font-weight: bold; */
 }
 
+.button-availability {
+  width: 200px;
+  height: 40px;
+  /* font-weight: bold; */
+}
 
 /* ------------------       Section 1          ------------------ */
 section {

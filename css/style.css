@@ -120,6 +120,18 @@ html {
   transform: scale(1.1);
 }
 
+.button-availability{
+  padding: 5px 30px;
+  background-color: var(--primary-blue);;
+  color: #fff;;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.button-availability:hover {
+  transform: scale(1.1);
+}
 
 .animation-div {
   position: relative;

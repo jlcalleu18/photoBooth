@@ -104,4 +104,9 @@ document.addEventListener("DOMContentLoaded", function () {
         window.open(smsLink, "_blank");
       });
   });
+
+  document.getElementById("checkAvailabilityBtn").addEventListener("click", function () {
+    // Replace with your Google Calendar public link
+    window.open("https://calendar.google.com/calendar/u/2?cid=cGhvdG9ib290aHNqQGdtYWlsLmNvbQ", "_blank");
+});
 });
