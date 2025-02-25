@@ -9,6 +9,7 @@ Thumbs.db
 .vscode/
 *.sublime-workspace
 *.sublime-project
+.DS_Store
 
 # Build output
 /dist
