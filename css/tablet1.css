@@ -1,0 +1,193 @@
+/* ===============================
+   SJ Photo Booth — Tablet & Mobile
+   Last updated: 2025-11-08
+   =============================== */
+@media (max-width: 991px) {
+  .display-5 { font-size: 1.875rem; }
+  #navgetquote { display: none; }
+  /* Sticky mobile CTA could go here if enabled later */
+}
+
+/* Keep existing rules */
+:root {
+  --primary-blue: #3c6bca;
+  --primary-gold: #eab105;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #201e1c;
+  --black: #282623;
+  --grey: #bababa;
+  --off-white: #faf8f7;
+  --just-white: #ffffff;
+}
+.nav_bar {
+  height: 55px;
+}
+.container_fluid {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  z-index: 1;
+  width: 100%;
+  max-width: 1600px;
+  padding: 0;
+}
+
+.navbar_brand {
+  position: fixed;
+  top: .5%;
+  left: 5%;
+  z-index: 999;
+}
+.custom-toggler .bar {
+  width: 25px;
+  height: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s ease-in-out;
+  background: #ffffff;
+  display: block;
+  cursor: pointer;
+}
+
+#mobile-menu {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  transform: translate(5%, 20%);
+}
+
+.navbar_nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  position: absolute;
+  top: -1000px;
+  opacity: 1;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+.navbar_nav.active {
+  background-color: var(--warm-black);
+  top: 100%;
+  opacity: 1;
+  transition: all 0.5s ease;
+  z-index: 99;
+  min-height: 35vh;
+  font-size: 1.2rem;
+}
+
+.nav_link {
+  align-items: center;
+  width: 100%;
+}
+
+
+#mobile-menu.is-active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#mobile-menu.is-active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#mobile-menu.is-active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+#navgetquote {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+}
+
+#navgetquote #button {
+  width: 200px;
+  height: 40px;
+  /* font-weight: bold; */
+}
+
+.button-availability {
+  width: 200px;
+  height: 40px;
+  /* font-weight: bold; */
+}
+
+/* ------------------       Section 1          ------------------ */
+section {
+  min-height:60vh;
+  padding-top: 55px;
+  scroll-margin-top: 55px;
+}
+
+#description {
+  padding-top: 50px;
+}
+
+#description p {
+  font-size: 1rem;
+}
+
+#img-Jorge img{
+  max-width: 85%;
+}
+
+/* ------------------       Logo         ------------------ */
+.relative-position {
+  position: relative;
+}
+.logo {
+  position: absolute;
+  bottom: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+/* ------------------       Logo         ------------------ */
+
+.container-desc {
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
+.portfolio-text {
+  margin: 20px 0;
+  padding: 0 20px;
+  font-size: 1.2rem;
+}
+
+.illustration-img {
+  max-width: 150px; /* Set a max width for the images */
+}
+
+
+
+
+/* ----------------------- Design Pricing --------------------*/
+
+.pricing-card, .printer-card {
+  margin-bottom: 20px;
+}
+
+.printer-card {
+  order: 4; /* Moves it to be the fourth card on mobile */
+}
+
+.btn-warning {
+  width: 40%;
+}
+/* 📱 Ensure full responsiveness */
+@media (max-width: 768px) {
+  .btn-warning {
+    width: 100%;
+  }
+}
+

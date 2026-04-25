@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SJ Photo Booth</title>
-  <!-- Add Bootstrap CSS -->
+  <meta name="description" content="SJ Photo Booth — luxury photo booth experiences for weddings and celebrations in New York, New Jersey, and Connecticut. Elegant backdrops, instant printing, GIFs, and more.">
+  <title>SJ Photo Booth | Luxury Wedding Photo Booth | NY · NJ · CT</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/tablet.css" media="(max-width: 991px)" />
 
@@ -16,48 +19,33 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/logos/apple-touch-icon.png" />
   <link rel="manifest" href="img/logos/site.webmanifest" />
 
-
-
-
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "SJ Photo Booth",
-      "url": "https://www.photoboothsj.com",
-      "logo": "https://www.photoboothsj.com/img/logo.png",
-      "image": "https://www.photoboothsj.com/img/Features/photo_feature.jpg",
-      "sameAs": [
-        "https://www.instagram.com/sj.photobooth",
-        "https://www.facebook.com/profile.php?id=61573532098362"
-      ]
-    }
-    </script>
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "SJ Photo Booth",
+    "url": "https://www.photoboothsj.com",
+    "logo": "https://www.photoboothsj.com/img/logo.png",
+    "image": "https://www.photoboothsj.com/img/Features/photo_feature.jpg",
+    "telephone": "+12017907108",
+    "email": "photoboothsj@gmail.com",
+    "areaServed": ["New York", "New Jersey", "Connecticut"],
+    "sameAs": [
+      "https://www.instagram.com/sj.photobooth",
+      "https://www.facebook.com/profile.php?id=61573532098362"
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <!-- <div class="animation-div">
-    <div class="dots-animation"></div>
-    <div class="dots-animation"></div>
-    <div class="dots-animation"></div>
-    <div class="dots-animation"></div>
-    <div class="dots-animation"></div>
-    <div class="dots-animation"></div>
-    <div class="dots-animation"></div>
-    <div class="dots-animation"></div>
-    <div class="dots-animation"></div>
-  </div> -->
   <header>
-
-
-
     <nav class="nav_bar">
       <div class="container_fluid">
         <a class="navbar_brand" href="#">
-          <img src="img/SJ-Photo-Booth-words.png" alt="SJ PhotoBooth" class="d-inline-block align-top" />
+          <img src="img/SJ-Photo-Booth-words.png" alt="SJ Photo Booth" class="d-inline-block align-top" />
         </a>
-        <div class="navbar-empty" href="#">
-        </div>
+        <div class="navbar-empty"></div>
 
         <div id="mobile-menu" class="custom-toggler">
           <span class="bar"></span>
@@ -66,63 +54,37 @@
         </div>
 
         <ul id="navbar" class="navbar_nav">
-          <li class="nav_item">
-            <a class="nav_link" id="about-page" href="#">Home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav_item">
-            <a class="nav_link " id="service-page" href="#services">Services</a>
-          </li>
-          <li class="nav_item">
-            <a class="nav_link" id="feature-page" href="#portfolio">Features</a>
-          </li>
-          <li class="nav_item">
-            <a class="nav_link" id="events-page" href="#contact">Events</a>
-          </li>
+          <li class="nav_item"><a class="nav_link" id="about-page"  href="#">Home</a></li>
+          <li class="nav_item"><a class="nav_link" id="service-page" href="#services">Services</a></li>
+          <li class="nav_item"><a class="nav_link" id="feature-page" href="#portfolio">Features</a></li>
+          <li class="nav_item"><a class="nav_link" href="pricing.html">Pricing</a></li>
+          <li class="nav_item"><a class="nav_link" id="events-page"  href="#contact">Contact</a></li>
         </ul>
+
         <div id="navgetquote">
           <button onclick="location.href='#contact'" id="button" type="button">Get Quote</button>
         </div>
       </div>
     </nav>
-
-
-
   </header>
 
   <main>
-    <section id="home" class="text-light text-center relative-position">
-      <!-- Slide show background -->
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-        <!-- Indicators -->
+
+    <!-- ── Hero ── -->
+    <section id="home" class="relative-position">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5500">
         <ol class="carousel-indicators">
           <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#heroCarousel" data-slide-to="1"></li>
           <li data-target="#heroCarousel" data-slide-to="2"></li>
           <li data-target="#heroCarousel" data-slide-to="3"></li>
         </ol>
-
-        <!-- Slides -->
         <div class="carousel-inner">
-          <div class="carousel-item active slide-image" style="background-image: url('img/Features/black_white.JPG')"></div>
-          <div class="carousel-item slide-image" style="background-image: url('img/Features/photo_feature.jpg')">
-          </div>
-          
-          <div class="carousel-item slide-image" style="background-image: url('img/Features/group.JPG')"></div>
-          <div class="carousel-item slide-image" style="background-image: url('img/Features/group2.JPG')"></div>
-
+          <div class="carousel-item active slide-image" style="background-image:url('img/Features/black_white.JPG')"></div>
+          <div class="carousel-item slide-image"        style="background-image:url('img/Features/photo_feature.jpg')"></div>
+          <div class="carousel-item slide-image"        style="background-image:url('img/Features/group.JPG')"></div>
+          <div class="carousel-item slide-image"        style="background-image:url('img/Features/group2.JPG')"></div>
         </div>
-        <!-- <div class="carousel-caption d-flex align-items-center justify-content-center">
-          <div>
-            <h1 class="display-4 title">Welcome to SJ Photo booth</h1>
-            <p class="lead">
-              Capture memories with our fun and interactive photo booth
-              services
-            </p>
-            <a href="#contact" class="btn btn-light">Get a Quote</a>
-          </div>
-        </div> -->
-
-        <!-- Controls -->
         <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
@@ -132,163 +94,182 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <p class="hero-eyebrow">New York &nbsp;·&nbsp; New Jersey &nbsp;·&nbsp; Connecticut</p>
+          <h1 class="hero-title">Capture Your<br><em>Perfect Day</em></h1>
+          <p class="hero-subtitle">Luxury photo booth experiences crafted for weddings &amp; unforgettable celebrations</p>
+          <div class="hero-cta">
+            <a href="#contact"   class="btn-cta-primary">Get a Quote</a>
+            <a href="pricing.html" class="btn-cta-outline">View Packages</a>
+          </div>
+        </div>
+      </div>
+
       <div class="logo">
-        <img src="img/logo.png" alt="logo" class="img-fluid">
+        <img src="img/logo.png" alt="SJ Photo Booth" class="img-fluid">
       </div>
     </section>
 
-    <!-- Description Section -->
-    <!-- <section id="description" class="py-5">
+    <!-- ── About ── -->
+    <section id="description" class="py-5">
       <div class="container container-desc">
-        <div id="row-desc" class="row justify-content-center">
-          <div class="col-md-4 desc-col align-self-around">
-            <h3 class="font-weight-bold">About Us</h3>
+        <div class="row align-items-center">
+
+          <div class="col-md-6 desc-col reveal">
+            <span class="section-tag">Our Story</span>
+            <h2 class="title mb-4">The Heart Behind<br><em>Every Celebration</em></h2>
             <p>
-              At SJ Photo Booth, we specialize in making your events unforgettable with our top-notch service. Perfect
-              for weddings, quinceañeras, birthdays, corporate events, and more, our Photo Booth combines sleek design
-              and modern technology to capture lasting memories. We offer customizable options like fun props, themed
-              backdrops, instant printing, and digital sharing. Whether you prefer classic prints or interactive
-              features like videos and GIFs, we’ve got you covered. Our friendly, bilingual team (English and Spanish)
-              ensures a seamless experience from start to finish, so you can relax and enjoy your event. Serving NY, NJ,
-              and CT, SJ Photo Booth is your go-to for creating picture-perfect moments. Let’s make your celebration
-              extraordinary!
+              At SJ Photo Booth, we believe every wedding deserves more than photographs — it deserves moments that move.
+              Founded by Jorge and Stephanie, we bring a personal, passionate touch to every event, crafting elegant
+              photo booth experiences your guests will treasure for years.
             </p>
+            <p>
+              We offer fully customizable experiences: luxury backdrops, curated props, instant printing, digital sharing,
+              and personalized frames — all designed around your vision. Our bilingual team (English &amp; Spanish)
+              ensures seamless service from your first inquiry to the final print.
+            </p>
+            <div class="about-stats">
+              <div class="about-stat">
+                <span class="about-stat-number" data-count="100" data-plus="true">100+</span>
+                <span class="about-stat-label">Events Served</span>
+              </div>
+              <div class="about-stat">
+                <span class="about-stat-number">5&#9733;</span>
+                <span class="about-stat-label">Google Rating</span>
+              </div>
+              <div class="about-stat">
+                <span class="about-stat-number">3</span>
+                <span class="about-stat-label">States Covered</span>
+              </div>
+            </div>
           </div>
+
+          <div id="img-Jorge" class="col-md-6 text-center reveal reveal-delay-2">
+            <div class="about-img-wrapper">
+              <img src="img/img-Jorge&Stephanie.png" alt="Jorge and Stephanie, founders of SJ Photo Booth">
+            </div>
+          </div>
+
         </div>
       </div>
-      <div class="logo-SJ">
-        <img src="img/img-Jorge&Stephanie.png" alt="Jorge Stephanie" class="img-fluid">
+    </section>
+
+    <!-- ── Stats Strip ── -->
+    <section id="stats">
+      <div class="stats-grid">
+        <div class="stat-item reveal reveal-delay-1">
+          <span class="stat-number" data-count="100" data-plus="true">100+</span>
+          <span class="stat-label">Events Served</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <span class="stat-number">5&#9733;</span>
+          <span class="stat-label">Google Rating</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <span class="stat-number">EN/ES</span>
+          <span class="stat-label">Bilingual Team</span>
+        </div>
+        <div class="stat-item reveal reveal-delay-4">
+          <span class="stat-number">NY·NJ·CT</span>
+          <span class="stat-label">Areas Served</span>
+        </div>
       </div>
-    </section> -->
+    </section>
 
-
-    <!-- Description Section -->
-<section id="description" class="py-5" style="background-color: #f9f9f9;">
-  <div class="container container-desc">
-    <div class="row align-items-center">
-      <!-- About Us Content -->
-      <div class="col-md-6 desc-col text-center text-md-left">
-        <h3 class="font-weight-bold" style="color: #3c6bca;">About Us</h3>
-        <p style="font-size: 1.1rem; color: #333; line-height: 1.8;">
-          At SJ Photo Booth, we specialize in making your events unforgettable with our top-notch service. Perfect
-          for weddings, quinceañeras, birthdays, corporate events, and more, our Photo Booth combines sleek design
-          and modern technology to capture lasting memories.
-        </p>
-        <p style="font-size: 1.1rem; color: #333; line-height: 1.8;">
-          We offer customizable options like fun props, themed backdrops, instant printing, and digital sharing. Whether
-          you prefer classic prints or interactive features like videos and GIFs, we’ve got you covered. Our friendly,
-          bilingual team (English and Spanish) ensures a seamless experience from start to finish, so you can relax and
-          enjoy your event.
-        </p>
-        <p style="font-size: 1.1rem; color: #333; line-height: 1.8;">
-          Serving NY, NJ, and CT, SJ Photo Booth is your go-to for creating picture-perfect moments. Let’s make your
-          celebration extraordinary!
-        </p>
-      </div>
-
-      <!-- About Us Image -->
-      <div id="img-Jorge" class="col-md-6 text-center">
-        <img src="img/img-Jorge&Stephanie.png" alt="Jorge and Stephanie">
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-    <!-- Service Section -->
-    <section id="services" class="py-5 service-dark-bg">
+    <!-- ── Services ── -->
+    <section id="services" class="service-dark-bg">
       <div class="container">
-        <h2 class="text-center title">Our Services</h2>
-        <!-- Image Gallery -->
-        <div class="row">
-          <div class="col-md-auto service-detail--card">
-            <img src="img/PhotoBooth.jpg" alt="Gallery Image 1" class="img-fluid border rounded" />
-            <h4 class="service-card-h4">Photobooth Rental</h4>
-            <p>
-              Capture fun and memorable moments with our stylish and modern
-              photobooth for rent.
-            </p>
-            </p>
+        <div class="section-header reveal">
+          <span class="section-tag">What We Offer</span>
+          <h2 class="title title-light">Our Services</h2>
+          <div class="ornament-divider ornament-divider-light">
+            <span class="ornament-diamond"></span>
           </div>
-
-          <div class="col-md-auto service-detail--card">
-            <img src="img/Attandent.jpg" alt="Gallery Image 2" class="img-fluid border rounded " />
-            <h4 class="service-card-h4">Booth Attendant</h4>
-            <p>
-              Our professional attendant ensures a seamless photo booth experience for your guests.
-            </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-auto service-detail--card reveal reveal-delay-1">
+            <img src="img/PhotoBooth.jpg" alt="Photo Booth Rental" style="width:100%;height:200px;object-fit:cover;display:block;" />
+            <div class="service-card-body">
+              <h4 class="service-card-h4">Photobooth Rental</h4>
+              <p>A sleek, modern booth that elevates any space — perfectly suited for weddings and upscale celebrations.</p>
+            </div>
           </div>
-          <div class="col-md-auto service-detail--card">
-            <img src="img/Sharing.jpg" alt="Gallery Image 3" class="img-fluid border rounded" />
-            <h4 class="service-card-h4">Instant Sharing</h4>
-            <p>
-
-              Share your photos instantly via email, phone, or social media. Let everyone join the fun, no matter where
-              they are!
-            </p>
+          <div class="col-md-auto service-detail--card reveal reveal-delay-2">
+            <img src="img/Attandent.jpg" alt="Professional Attendant" style="width:100%;height:200px;object-fit:cover;display:block;" />
+            <div class="service-card-body">
+              <h4 class="service-card-h4">Professional Attendant</h4>
+              <p>Our dedicated attendant ensures every guest has a flawless, effortless photo booth experience.</p>
+            </div>
           </div>
-          <div class="col-md-auto service-detail--card">
-            <img src="img/Printing.jpg" alt="Gallery Image 3" class="img-fluid border rounded" />
-            <h4 class="service-card-h4">Unlimited Prints</h4>
-            <p>
-              Take home high-quality photo prints on the spot and cherish the
-              memories forever.
-            </p>
+          <div class="col-md-auto service-detail--card reveal reveal-delay-3">
+            <img src="img/Sharing.jpg" alt="Instant Sharing" style="width:100%;height:200px;object-fit:cover;display:block;" />
+            <div class="service-card-body">
+              <h4 class="service-card-h4">Instant Sharing</h4>
+              <p>Share photos instantly via email, text, or social media — keeping everyone connected in the moment.</p>
+            </div>
+          </div>
+          <div class="col-md-auto service-detail--card reveal reveal-delay-4">
+            <img src="img/Printing.jpg" alt="Unlimited Prints" style="width:100%;height:200px;object-fit:cover;display:block;" />
+            <div class="service-card-body">
+              <h4 class="service-card-h4">Unlimited Prints</h4>
+              <p>High-quality prints on the spot — beautiful keepsakes for every guest to take home and cherish.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- ── Features ── -->
     <section id="portfolio" class="py-5">
       <div class="container">
-        <h2 class="text-center portfolio-title title">Our Features</h2>
-        <p class="text-center portfolio-text">
-          Whether it's for a wedding, sweet 16th, birthday, corporate event, or prom, we've got you covered with
-          customizable and classy rentals that will capture every moment of your special occasion.
-        </p>
-        <h3 class="text-center font-weight-bold">Elevate your next event with our photo booth experience!
-        </h3>
-        <!-- Image Gallery -->
+        <div class="section-header reveal">
+          <span class="section-tag">Capture Every Moment</span>
+          <h2 class="title portfolio-title">Our Features</h2>
+          <div class="ornament-divider">
+            <span class="ornament-diamond"></span>
+          </div>
+          <p class="portfolio-text">
+            From classic portraits to animated boomerangs — a full suite of capture modes for every style of celebration.
+          </p>
+          <p class="features-tagline">Elevate your wedding with a photo booth experience your guests will love.</p>
+        </div>
         <div class="row justify-content-center">
-          <!-- Added 'justify-content-center' class to center the content horizontally -->
-          <div class="col-6 col-sm-3 portfolio-detail--card text-center">
-            <!-- Added 'text-center' class to center the content vertically -->
-            <img src="img/Features/photo_feature.jpg" alt="Gallery Image 1" class="img-fluid border rounded" />
+          <div class="col-6 col-sm-3 portfolio-detail--card text-center reveal reveal-delay-1">
+            <img src="img/Features/photo_feature.jpg" alt="Photo" class="img-fluid border rounded" />
             <h4 class="portfolio-card-h4">Photo</h4>
           </div>
-
-          <div class="col-6 col-sm-3 portfolio-detail--card text-center">
-            <img src="img/Features/gifs.gif" alt="Gif" class="img-fluid border rounded"></img>
-            <h4 class="portfolio-card-h4">Gif's</h4>
+          <div class="col-6 col-sm-3 portfolio-detail--card text-center reveal reveal-delay-2">
+            <img src="img/Features/gifs.gif" alt="GIFs" class="img-fluid border rounded">
+            <h4 class="portfolio-card-h4">GIFs</h4>
           </div>
-
-
-          <div class="col-6 col-sm-3 portfolio-detail--card text-center">
-            <!-- Added 'text-center' class to center the content vertically -->
-            <img src="img/Features/boomerangs.gif" alt="boomerang" class="img-fluid border rounded"></img>
+          <div class="col-6 col-sm-3 portfolio-detail--card text-center reveal reveal-delay-3">
+            <img src="img/Features/boomerangs.gif" alt="Boomerangs" class="img-fluid border rounded">
             <h4 class="portfolio-card-h4">Boomerangs</h4>
           </div>
-
-          <div class="col-6 col-sm-3 portfolio-detail--card text-center">
-            <!-- Added 'text-center' class to center the content vertically -->
-            <img src="img/Features/black_white.JPG" alt="Gallery Image 3" class="img-fluid border rounded" />
-            <h4 class="portfolio-card-h4">Black/White</h4>
+          <div class="col-6 col-sm-3 portfolio-detail--card text-center reveal reveal-delay-4">
+            <img src="img/Features/black_white.JPG" alt="Black &amp; White" class="img-fluid border rounded" />
+            <h4 class="portfolio-card-h4">Black &amp; White</h4>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="services" class="py-5 service-dark-bg">
+    <!-- ── Customize ── -->
+    <section id="customize" class="service-dark-bg">
       <div class="container">
-        <h2 class="text-center title">Customize Your Experience</h2>
-        <p class="text-center portfolio-text">Enhance your photo booth experience with our additional features, designed
-          to make your event unforgettable</p>
-        <!-- Image Gallery -->
-        <div class="row">
-          <div class="col-md-auto service-detail--card">
+        <div class="section-header reveal">
+          <span class="section-tag">Tailored To You</span>
+          <h2 class="title title-light">Customize Your Experience</h2>
+          <div class="ornament-divider ornament-divider-light">
+            <span class="ornament-diamond"></span>
+          </div>
+          <p class="section-subtitle">Enhance your photo booth with additional features designed to make your event unforgettable.</p>
+        </div>
+        <div class="row justify-content-center">
+
+          <div class="col-md-auto service-detail--card reveal reveal-delay-1">
             <div id="carouselBackdrops" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselBackdrops" data-slide-to="0" class="active"></li>
@@ -299,47 +280,23 @@
                 <li data-target="#carouselBackdrops" data-slide-to="5"></li>
               </ol>
               <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="img/Backdrops/GOLDEN LEAVES BACKDROP.jpg" class="d-block w-100 img-fluid border rounded"
-                    alt="Backdrop Image 1">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/Backdrops/BLACK BACKDROP.jpg" class="d-block w-100 img-fluid border rounded"
-                    alt="Backdrop Image 2">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/Backdrops/GREEN BACKDROP.jpg" class="d-block w-100 img-fluid border rounded"
-                    alt="Backdrop Image 3">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/Backdrops/MARBLE BACKDROP.jpg" class="d-block w-100 img-fluid border rounded"
-                    alt="Backdrop Image 4">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/Backdrops/SPARKLE BACKDROP.jpg" class="d-block w-100 img-fluid border rounded"
-                    alt="Backdrop Image 5">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/Backdrops/WHITE BACKDROP.jpg" class="d-block w-100 img-fluid border rounded"
-                    alt="Backdrop Image 6">
-                </div>
-                <!-- Add more images here -->
+                <div class="carousel-item active"><img src="img/Backdrops/GOLDEN LEAVES BACKDROP.jpg" class="d-block w-100" alt="Golden Leaves Backdrop"></div>
+                <div class="carousel-item"><img src="img/Backdrops/BLACK BACKDROP.jpg"         class="d-block w-100" alt="Black Backdrop"></div>
+                <div class="carousel-item"><img src="img/Backdrops/GREEN BACKDROP.jpg"          class="d-block w-100" alt="Green Backdrop"></div>
+                <div class="carousel-item"><img src="img/Backdrops/MARBLE BACKDROP.jpg"         class="d-block w-100" alt="Marble Backdrop"></div>
+                <div class="carousel-item"><img src="img/Backdrops/SPARKLE BACKDROP.jpg"        class="d-block w-100" alt="Sparkle Backdrop"></div>
+                <div class="carousel-item"><img src="img/Backdrops/WHITE BACKDROP.jpg"          class="d-block w-100" alt="White Backdrop"></div>
               </div>
-              <a class="carousel-control-prev" href="#carouselBackdrops" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselBackdrops" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+              <a class="carousel-control-prev" href="#carouselBackdrops" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+              <a class="carousel-control-next" href="#carouselBackdrops" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
             </div>
-            <h4 class="service-card-h4">Backdrops</h4>
-            <p>Transform your event with stunning backdrops. Choose from various styles or let us create a custom
-              backdrop.</p>
+            <div class="service-card-body">
+              <h4 class="service-card-h4">Luxury Backdrops</h4>
+              <p>Choose from our curated collection or let us design something custom for your wedding palette.</p>
+            </div>
           </div>
 
-          <div class="col-md-auto service-detail--card">
+          <div class="col-md-auto service-detail--card reveal reveal-delay-2">
             <div id="carouselAttendant" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselAttendant" data-slide-to="0" class="active"></li>
@@ -347,35 +304,20 @@
                 <li data-target="#carouselAttendant" data-slide-to="2"></li>
               </ol>
               <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="img/Props/PROPS_1.jpg" class="d-block w-100 img-fluid border rounded"
-                    alt="Attendant Image 1">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/Props/PROPS_2.jpg" class="d-block w-100 img-fluid border rounded"
-                    alt="Attendant Image 2">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/Props/PROPS_3.jpg" class="d-block w-100 img-fluid border rounded"
-                    alt="Attendant Image 3">
-                </div>
-                <!-- Add more images here -->
+                <div class="carousel-item active"><img src="img/Props/PROPS_1.jpg" class="d-block w-100" alt="Props Collection 1"></div>
+                <div class="carousel-item"><img src="img/Props/PROPS_2.jpg" class="d-block w-100" alt="Props Collection 2"></div>
+                <div class="carousel-item"><img src="img/Props/PROPS_3.jpg" class="d-block w-100" alt="Props Collection 3"></div>
               </div>
-              <a class="carousel-control-prev" href="#carouselAttendant" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselAttendant" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+              <a class="carousel-control-prev" href="#carouselAttendant" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+              <a class="carousel-control-next" href="#carouselAttendant" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
             </div>
-            <h4 class="service-card-h4">Props</h4>
-            <p>Add fun and flair with our props. From quirky to classic, we have options to suit any theme or design
-              custom props.</p>
+            <div class="service-card-body">
+              <h4 class="service-card-h4">Curated Props</h4>
+              <p>From elegant to whimsical — our prop collections add personality to every shot. Custom props available.</p>
+            </div>
           </div>
 
-          <div class="col-md-auto service-detail--card">
+          <div class="col-md-auto service-detail--card reveal reveal-delay-3">
             <div id="carouselFrames" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselFrames" data-slide-to="0" class="active"></li>
@@ -385,43 +327,22 @@
                 <li data-target="#carouselFrames" data-slide-to="4"></li>
               </ol>
               <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="img/frames/FRAMES_1.jpg" class="d-block w-100 img-fluid border rounded"
-                    alt="Sharing Image 1">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/frames/FRAMES_2.jpg" class="d-block w-100 img-fluid border rounded"
-                    alt="Sharing Image 2">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/frames/FRAMES_5.jpg" class="d-block w-100 img-fluid border rounded"
-                    alt="Sharing Image 3">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/frames/FRAMES_3.jpg" class="d-block w-100 img-fluid border rounded"
-                    alt="Sharing Image 4">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/frames/FRAMES_4.jpg" class="d-block w-100 img-fluid border rounded"
-                    alt="Sharing Image 5">
-                </div>
-                <!-- Add more images here -->
+                <div class="carousel-item active"><img src="img/frames/FRAMES_1.jpg" class="d-block w-100" alt="Photo Frame 1"></div>
+                <div class="carousel-item"><img src="img/frames/FRAMES_2.jpg" class="d-block w-100" alt="Photo Frame 2"></div>
+                <div class="carousel-item"><img src="img/frames/FRAMES_5.jpg" class="d-block w-100" alt="Photo Frame 3"></div>
+                <div class="carousel-item"><img src="img/frames/FRAMES_3.jpg" class="d-block w-100" alt="Photo Frame 4"></div>
+                <div class="carousel-item"><img src="img/frames/FRAMES_4.jpg" class="d-block w-100" alt="Photo Frame 5"></div>
               </div>
-              <a class="carousel-control-prev" href="#carouselFrames" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselFrames" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+              <a class="carousel-control-prev" href="#carouselFrames" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+              <a class="carousel-control-next" href="#carouselFrames" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
             </div>
-            <h4 class="service-card-h4">Photo Frames</h4>
-            <p>Frame memories beautifully with our picture frames. Select elegant designs or let us craft custom frames.
-            </p>
+            <div class="service-card-body">
+              <h4 class="service-card-h4">Custom Frames</h4>
+              <p>Beautifully designed frames that match your event aesthetic — elegant, personalized, and memorable.</p>
+            </div>
           </div>
 
-          <div class="col-md-auto service-detail--card">
+          <div class="col-md-auto service-detail--card reveal reveal-delay-4">
             <div id="carouselPrinting" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselPrinting" data-slide-to="0" class="active"></li>
@@ -429,98 +350,249 @@
                 <li data-target="#carouselPrinting" data-slide-to="2"></li>
               </ol>
               <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="img/LiveGallery/livegallery_1.jpg" class="d-block w-100 img-fluid border rounded"
-                    alt="Printing Image 1">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/LiveGallery/livegallery_2.jpg" class="d-block w-100 img-fluid border rounded"
-                    alt="Printing Image 2">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/LiveGallery/livegallery_3.jpg" class="d-block w-100 img-fluid border rounded"
-                    alt="Printing Image 2">
-                </div>
-                <!-- Add more images here -->
+                <div class="carousel-item active"><img src="img/LiveGallery/livegallery_1.jpg" class="d-block w-100" alt="Live Gallery 1"></div>
+                <div class="carousel-item"><img src="img/LiveGallery/livegallery_2.jpg" class="d-block w-100" alt="Live Gallery 2"></div>
+                <div class="carousel-item"><img src="img/LiveGallery/livegallery_3.jpg" class="d-block w-100" alt="Live Gallery 3"></div>
               </div>
-              <a class="carousel-control-prev" href="#carouselPrinting" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselPrinting" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+              <a class="carousel-control-prev" href="#carouselPrinting" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+              <a class="carousel-control-next" href="#carouselPrinting" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
             </div>
-            <h4 class="service-card-h4">Live Gallery</h4>
-            <p>Share the excitement with our live gallery. Display event photos in real-time and customize to reflect
-              your celebration.</p>
+            <div class="service-card-body">
+              <h4 class="service-card-h4">Live Gallery</h4>
+              <p>Display event photos in real-time on a shared screen — an interactive centerpiece for your celebration.</p>
+            </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5" style="background-color: #fff5eb;">
-      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
-        <!-- Contact Details -->
-        <div class="contact-details text-left">
-          <h3 style="color: #3c6bca;">How can we help you?</h3>
-          <h1 class="mb-4" style="font-weight: bold; color: #000;">Contact Us</h1>
-          <p class="mb-4" style="color: #333; font-size: 1.1rem;">
-            We're here to make your event unforgettable! Contact us with any questions or bookings. We look forward to
-            hearing from you!
-          </p>
-          <ul class="list-unstyled">
-            <!-- Instagram -->
-            <li class="mb-3 d-flex align-items-center">
-              <img src="img/instagram-icon.webp" alt="Instagram Icon"
-                style="width: 24px; height: 24px; margin-right: 10px;">
-              <a href="https://www.instagram.com/sj.photobooth?igsh=MTRxZzZtYmRuYXh1Ng%3D%3D&utm_source=qr"
-                target="_blank">@sj.photobooth</a>
-            </li>
-            <!-- Phone -->
-            <li class="mb-3 d-flex align-items-center">
-              <img src="img/phone-icon.webp" alt="Phone Icon" style="width: 24px; height: 24px;margin-right: 10px;">
-              <a href="tel:+12017907108" target="_blank">+1 (201) 790-7108</a>
-            </li>
-
-            <!-- Email -->
-            <li class="d-flex align-items-center">
-              <img src="img/email-icon.png" alt="Email Icon" style="width: 24px; height: 24px;margin-right: 10px;">
-              <a href="mailto:photoboothsj@gmail.com">photoboothsj@gmail.com</a>
-            </li>
-          </ul>
+    <!-- ── Testimonials ── -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Real Couples, Real Memories</span>
+          <h2 class="title">What Our Clients Say</h2>
+          <div class="ornament-divider">
+            <span class="ornament-diamond"></span>
+          </div>
+          <p class="section-subtitle">Trusted by hundreds of couples and families across NY, NJ &amp; CT</p>
         </div>
+        <div class="testimonial-grid">
 
-        <!-- Illustration -->
-        <div class="illustrations d-flex lign-items-centen">
-          <!-- Illustration 1 -->
-          <div class="contact-illustration">
-            <img src="img/photo-booth-illustration2.png" alt="Photo Booth Illustration 1" class="illustration-img">
+          <div class="testimonial-card reveal reveal-delay-1">
+            <span class="testimonial-quote">&ldquo;</span>
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-text">Everything from contact, to planning and the experience was overall 10/10. I'd give them 10 stars if I could. I couldn't be more grateful to have found them.</p>
+            <span class="testimonial-author">LexusJoan Franco</span>
+            <span class="testimonial-event">Wedding &mdash; September 2024</span>
           </div>
-          <!-- Illustration 2 -->
-          <div class="contact-illustration">
-            <img src="img/photo-booth-illustration.png" alt="Photo Booth Illustration 2" class="illustration-img">
+
+          <div class="testimonial-card reveal reveal-delay-2">
+            <span class="testimonial-quote">&ldquo;</span>
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-text">We had the pleasure of using SJ Photo Booth for our wedding, and we couldn't have been happier. From start to finish, they went above and beyond to make our wedding day special and even more memorable.</p>
+            <span class="testimonial-author">Nittany Sanchez</span>
+            <span class="testimonial-event">Wedding</span>
           </div>
+
+          <div class="testimonial-card reveal reveal-delay-3">
+            <span class="testimonial-quote">&ldquo;</span>
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-text">The SJ team was absolutely everything we could ask for on our special day. The attention to detail and their beautiful custom designs and backdrops was amazing, and our guests had so much fun with the props.</p>
+            <span class="testimonial-author">Elizabeth Grace</span>
+            <span class="testimonial-event">Wedding</span>
+          </div>
+
+          <div class="testimonial-card reveal reveal-delay-1">
+            <span class="testimonial-quote">&ldquo;</span>
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-text">I cannot recommend SJ Photo Booth enough for making our wedding day even more magical! The quality of the photos was beautifully printed and our guests loved the variety of props. Highly professional and friendly.</p>
+            <span class="testimonial-author">Erica Gonzalez-Bravo</span>
+            <span class="testimonial-event">Wedding</span>
+          </div>
+
+          <div class="testimonial-card reveal reveal-delay-2">
+            <span class="testimonial-quote">&ldquo;</span>
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-text">What a great experience! Stephanie was a pleasure to work with — extremely organized and punctual. The process was seamless and customized to our own personal design and touch. Everyone had such a great time.</p>
+            <span class="testimonial-author">Christine &amp; Pierce</span>
+            <span class="testimonial-event">Wedding</span>
+          </div>
+
+          <div class="testimonial-card reveal reveal-delay-3">
+            <span class="testimonial-quote">&ldquo;</span>
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="testimonial-text">Booked this lovely couple for a wedding reception and their service did not disappoint! Pictures and film came out beautifully and was definitely a party favorite. Very fast and efficient communication — will definitely be booking again!</p>
+            <span class="testimonial-author">Brenda Cortes</span>
+            <span class="testimonial-event">Wedding Reception</span>
+          </div>
+
+        </div>
+        <div class="testimonials-footer reveal">
+          <a href="https://www.google.com/search?q=sj+photo+booth#lrd=0x89c2f75facdf3eaf:0x2790c40441ba832b,1,,,," target="_blank" rel="noopener" class="google-reviews-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+            </svg>
+            Read all our Google reviews
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Pre-Footer CTA ── -->
+    <section id="cta-banner">
+      <div class="container">
+        <span class="cta-banner-eyebrow reveal">Begin Your Journey</span>
+        <h2 class="cta-banner-title reveal">Ready to Make Your<br><em>Wedding Day</em> Unforgettable?</h2>
+        <p class="cta-banner-subtitle reveal">Book SJ Photo Booth and give your guests a moment they'll never forget.</p>
+        <a href="#contact" class="btn-cta-primary reveal">Get a Quote Today</a>
+      </div>
+    </section>
+
+    <!-- ── Contact ── -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Left: Info -->
+          <div class="contact-info reveal">
+            <span class="section-tag">Let's Connect</span>
+            <h2 class="contact-title">Let's Plan<br><em>Your Day</em></h2>
+            <p class="contact-intro">
+              Tell us about your event and we'll get back to you within 24 hours with a custom quote.
+              We'd love to be part of your celebration.
+            </p>
+            <ul class="list-unstyled contact-links" style="margin-top:2rem;">
+              <li class="mb-3 d-flex align-items-center">
+                <img src="img/instagram-icon.webp" alt="Instagram" style="width:20px;height:20px;margin-right:12px;">
+                <a href="https://www.instagram.com/sj.photobooth?igsh=MTRxZzZtYmRuYXh1Ng%3D%3D&utm_source=qr" target="_blank" rel="noopener">@sj.photobooth</a>
+              </li>
+              <li class="mb-3 d-flex align-items-center">
+                <img src="img/phone-icon.webp" alt="Phone" style="width:20px;height:20px;margin-right:12px;">
+                <a href="tel:+12017907108">+1 (201) 790-7108</a>
+              </li>
+              <li class="d-flex align-items-center">
+                <img src="img/email-icon.png" alt="Email" style="width:20px;height:20px;margin-right:12px;">
+                <a href="mailto:photoboothsj@gmail.com">photoboothsj@gmail.com</a>
+              </li>
+            </ul>
+            <p class="contact-bilingual">Hablamos Espa&ntilde;ol &nbsp;&middot;&nbsp; We speak English</p>
+          </div>
+
+          <!-- Right: Form — replace xxxxxxxxxxx with your Formspree form ID at formspree.io -->
+          <div class="contact-form-wrapper reveal reveal-delay-2">
+            <form id="contact-form" action="https://formspree.io/f/xxxxxxxxxxx" method="POST">
+              <input type="hidden" name="_subject" value="New Inquiry &mdash; SJ Photo Booth">
+
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="cf-name">Your Name *</label>
+                  <input type="text" id="cf-name" name="Name" placeholder="Jane &amp; John Smith" required>
+                </div>
+                <div class="form-field">
+                  <label for="cf-email">Email Address *</label>
+                  <input type="email" id="cf-email" name="email" placeholder="you@email.com" required>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="cf-phone">Phone Number</label>
+                  <input type="tel" id="cf-phone" name="Phone" placeholder="+1 (___) ___-____">
+                </div>
+                <div class="form-field">
+                  <label for="cf-event-type">Event Type *</label>
+                  <select id="cf-event-type" name="Event Type" required>
+                    <option value="" disabled selected>Select event type</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Wedding Reception">Wedding Reception</option>
+                    <option value="Quincea&ntilde;era">Quincea&ntilde;era</option>
+                    <option value="Sweet 16">Sweet 16</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Corporate Event">Corporate Event</option>
+                    <option value="Baptism">Baptism</option>
+                    <option value="Prom">Prom</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="cf-date">Event Date</label>
+                  <input type="date" id="cf-date" name="Event Date">
+                </div>
+                <div class="form-field">
+                  <label for="cf-guests">Estimated Guests</label>
+                  <input type="number" id="cf-guests" name="Estimated Guests" placeholder="e.g. 150" min="1">
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="cf-message">Tell Us More</label>
+                <textarea id="cf-message" name="Message" rows="4" placeholder="Venue, theme, special requests, questions..."></textarea>
+              </div>
+
+              <p id="form-error" class="form-error"></p>
+              <button type="submit" class="btn-submit">Send Inquiry</button>
+            </form>
+
+            <div id="form-success" class="form-success">
+              <div class="form-success-icon">&#10003;</div>
+              <h3 class="form-success-title">Message Received!</h3>
+              <p class="form-success-text">Thank you for reaching out. We'll be in touch within 24 hours to discuss your event.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
   </main>
-  <!-- Footer -->
-  <footer class="bg-light text-center py-3">
-    <div class="container">
-      <p>&copy; 2025 SJ PhotoBooth. All rights reserved.</p>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="img/SJ-Photo-Booth-words.png" alt="SJ Photo Booth">
+        <p class="footer-tagline">Luxury photo booth &nbsp;·&nbsp; NY &nbsp;·&nbsp; NJ &nbsp;·&nbsp; CT</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-nav-col">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-col">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="https://www.instagram.com/sj.photobooth" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61573532098362" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://www.google.com/search?q=sj+photo+booth#lrd=0x89c2f75facdf3eaf:0x2790c40441ba832b,1,,,," target="_blank" rel="noopener">Google Reviews</a></li>
+            <li><a href="mailto:photoboothsj@gmail.com">Email Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 SJ Photo Booth. All rights reserved.</span>
+      <span>Serving New York &nbsp;·&nbsp; New Jersey &nbsp;·&nbsp; Connecticut</span>
     </div>
   </footer>
 
-  <!-- Add Bootstrap JS and jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.0/dist/gsap.min.js"></script>
 </body>
 
 </html>

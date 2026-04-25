@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photo Booth Packages & Add-Ons | SJ Photo Booth NJ & NY</title>
+  <meta name="description" content="Transparent pricing: 2–4 hour packages, instant sharing, props, custom frames, and printed photos add-on. Book by SMS in seconds." />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/tablet.css" media="(max-width: 991px)" />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="sticky-top bg-white shadow-sm">
+    <nav class="container navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="SJ Photo Booth home">
+        <img src="img/logo.png" alt="SJ Photo Booth logo" height="40" loading="eager" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="mainNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Events</a></li>
+        </ul>
+        <a id="navgetquote" class="btn btn-primary ml-lg-3" href="sms:+12017907108">Get Quote</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h1 class="h2">Packages</h1>
+        <p class="text-muted">Pick a package. Customize with add‑ons. Easy.</p>
+      </div>
+
+      <!-- Example pricing cards (structure only; keep your actual content/prices) -->
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="pricing-card card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h3 class="package-title h5">Basic</h3>
+              <p class="duration text-muted mb-2">2 hours</p>
+              <ul class="pl-3">
+                <li>Unlimited sessions</li>
+                <li>Digital sharing</li>
+                <li>Standard backdrop</li>
+              </ul>
+              <button class="btn btn-primary btn-block book-now">Book Basic</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="pricing-card card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h3 class="package-title h5">Premium</h3>
+              <p class="duration text-muted mb-2">3 hours</p>
+              <ul class="pl-3">
+                <li>Everything in Basic</li>
+                <li>Premium props</li>
+                <li>Custom overlay</li>
+              </ul>
+              <button class="btn btn-primary btn-block book-now">Book Premium</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="pricing-card card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h3 class="package-title h5">Luxury</h3>
+              <p class="duration text-muted mb-2">4 hours</p>
+              <ul class="pl-3">
+                <li>Everything in Premium</li>
+                <li>Attendant</li>
+                <li>Custom backdrop</li>
+              </ul>
+              <button class="btn btn-primary btn-block book-now">Book Luxury</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add-ons -->
+      <section class="mt-5">
+        <h2 class="h4">Popular Add‑Ons</h2>
+        <div class="row">
+          <div class="col-md-4 mb-3"><div class="p-3 bg-light rounded h-100">Unlimited Prints</div></div>
+          <div class="col-md-4 mb-3"><div class="p-3 bg-light rounded h-100">Custom Frame Design</div></div>
+          <div class="col-md-4 mb-3"><div class="p-3 bg-light rounded h-100">Premium Backdrop</div></div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="mt-5 text-left">
+        <h4>FAQ</h4>
+        <details><summary>Do you travel outside NJ/NY?</summary><p>Yes—small travel fee may apply.</p></details>
+        <details><summary>Are prints unlimited?</summary><p>Yes, with the printer add‑on; digital sharing is always unlimited.</p></details>
+        <details><summary>Can you customize frames/backdrops?</summary><p>Absolutely. We’ll design it to match your theme.</p></details>
+      </section>
+    </div>
+  </main>
+
+  <footer class="bg-light text-center py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 SJ PhotoBooth. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    // Enhanced Book Now: WhatsApp on mobile, SMS on desktop (with package info)
+    (function(){
+      var phoneNumber = "12017907108"; // include country code
+      var buttons = document.querySelectorAll(".book-now");
+      function isMobile(){ return /Android|iPhone|iPad/i.test(navigator.userAgent); }
+      function handleClick(e){
+        var card = e.target.closest(".pricing-card");
+        var pkg = card.querySelector(".package-title").textContent.trim();
+        var duration = card.querySelector(".duration").textContent.trim();
+        var msg = encodeURIComponent("Hi SJ Photo Booth! I'm interested in the " + pkg + " for " + duration + ". Is " + new Date().toLocaleDateString() + " available?");
+        var wa = "https://wa.me/" + phoneNumber + "?text=" + msg;
+        var sms = "sms:" + phoneNumber + "?&body=" + msg;
+        window.open(isMobile() ? wa : sms, "_blank");
+      }
+      buttons.forEach(function(b){ b.addEventListener("click", handleClick); });
+    })();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

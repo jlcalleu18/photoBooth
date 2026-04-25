@@ -1,52 +1,59 @@
+/* Tablet & Mobile — max-width: 991px */
+
 :root {
-  --primary-blue: #3c6bca;
-  --primary-gold: #eab105;
-  --secondary-blue: #1a9af7;
-  --soft-blue: #e7f5ff;
-  --warm-black: #201e1c;
-  --black: #282623;
-  --grey: #bababa;
-  --off-white: #faf8f7;
-  --just-white: #ffffff;
+  --gold: #c9a96e;
+  --gold-dark: #a07840;
+  --gold-light: #f0e6d3;
+  --dark: #1c1a18;
+  --warm-dark: #2a2825;
+  --cream: #faf6f0;
+  --ivory: #f5f0e8;
+  --white: #ffffff;
+  --text-dark: #2c2a27;
+  --text-muted: #7a7068;
+  --border: #e8e0d5;
 }
-.nav_bar {
-  height: 55px;
-}
+
+.nav_bar { height: 55px; }
+
 .container_fluid {
   display: flex;
   justify-content: space-between;
   height: 100%;
-  z-index: 1;
   width: 100%;
-  max-width: 1600px;
+  max-width: 100%;
   padding: 0;
 }
 
 .navbar_brand {
   position: fixed;
-  top: .5%;
+  top: 6px;
   left: 5%;
   z-index: 999;
 }
-.custom-toggler .bar {
-  width: 25px;
-  height: 3px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  transition: all 0.3s ease-in-out;
-  background: #ffffff;
+
+.navbar_brand img { width: 160px; }
+
+.custom-toggler {
   display: block;
+  position: absolute;
+  top: 14px;
+  right: 5%;
   cursor: pointer;
 }
 
-#mobile-menu {
-  position: absolute;
-  top: 15%;
-  right: 5%;
-  transform: translate(5%, 20%);
+.custom-toggler .bar {
+  width: 24px;
+  height: 2px;
+  margin: 5px auto;
+  background: var(--white);
+  display: block;
+  transition: all 0.3s ease-in-out;
 }
+
+#mobile-menu.is-active .bar:nth-child(2) { opacity: 0; }
+#mobile-menu.is-active .bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+#mobile-menu.is-active .bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 .navbar_nav {
   display: flex;
@@ -55,36 +62,24 @@
   width: 100%;
   position: absolute;
   top: -1000px;
-  opacity: 1;
-  transition: all 0.5s ease;
+  opacity: 0;
+  transition: all 0.4s ease;
   z-index: -1;
 }
+
 .navbar_nav.active {
-  background-color: var(--warm-black);
+  background-color: var(--dark);
+  border-top: 1px solid rgba(201, 169, 110, 0.2);
   top: 100%;
   opacity: 1;
-  transition: all 0.5s ease;
   z-index: 99;
-  min-height: 35vh;
-  font-size: 1.2rem;
+  min-height: 40vh;
 }
 
 .nav_link {
-  align-items: center;
   width: 100%;
-}
-
-
-#mobile-menu.is-active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-#mobile-menu.is-active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-#mobile-menu.is-active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
+  height: 52px;
+  font-size: 0.9rem;
 }
 
 #navgetquote {
@@ -94,88 +89,113 @@
   left: 0;
   width: 100%;
   padding: 10px 0;
+  background-color: var(--dark);
+  border-top: 1px solid rgba(201, 169, 110, 0.15);
+  z-index: 998;
 }
 
 #navgetquote #button {
   width: 200px;
   height: 40px;
-  /* font-weight: bold; */
 }
 
 .button-availability {
   width: 200px;
   height: 40px;
-  /* font-weight: bold; */
 }
 
-/* ------------------       Section 1          ------------------ */
+/* Sections */
 section {
-  min-height:60vh;
+  min-height: auto;
   padding-top: 55px;
   scroll-margin-top: 55px;
 }
 
-#description {
-  padding-top: 50px;
-}
+#description { padding-top: 50px; }
 
-#description p {
-  font-size: 1rem;
-}
-
-#img-Jorge img{
-  max-width: 85%;
-}
-
-/* ------------------       Logo         ------------------ */
-.relative-position {
-  position: relative;
-}
-.logo {
-  position: absolute;
-  bottom: -75px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-/* ------------------       Logo         ------------------ */
+#description p { font-size: 0.98rem; }
 
 .container-desc {
-  padding-top: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
-
+  padding: 40px 24px;
 }
 
-.portfolio-text {
-  margin: 20px 0;
-  padding: 0 20px;
-  font-size: 1.2rem;
+/* Hero */
+.carousel-fade .carousel-inner .carousel-item { height: 80vh; }
+
+.hero-title { font-size: 3rem; }
+
+.hero-subtitle { font-size: 0.95rem; }
+
+.btn-cta-primary,
+.btn-cta-outline {
+  padding: 13px 28px;
+  font-size: 0.76rem;
 }
 
-.illustration-img {
-  max-width: 150px; /* Set a max width for the images */
+.logo {
+  bottom: -60px;
 }
 
+.logo img { width: 130px; }
 
-
-
-/* ----------------------- Design Pricing --------------------*/
-
-.pricing-card, .printer-card {
-  margin-bottom: 20px;
+/* About stats */
+.about-stats {
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
-.printer-card {
-  order: 4; /* Moves it to be the fourth card on mobile */
+/* Testimonials */
+.testimonial-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
 }
 
-.btn-warning {
-  width: 40%;
+/* Portfolio text */
+.portfolio-text { padding: 0 20px; }
+
+/* Contact form */
+.contact-layout {
+  grid-template-columns: 1fr;
+  gap: 36px;
+  padding: 50px 24px;
 }
-/* 📱 Ensure full responsiveness */
-@media (max-width: 768px) {
-  .btn-warning {
-    width: 100%;
-  }
+
+.contact-form-wrapper { padding: 30px 24px; }
+
+.form-row-2 {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+/* Footer */
+.footer-inner {
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-nav { gap: 30px; }
+
+.footer-bottom {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+/* Img Jorge */
+#img-Jorge img { max-width: 85%; }
+
+/* Pricing */
+.pricing-card, .printer-card { margin-bottom: 20px; }
+
+.btn-warning { width: 60%; }
+
+/* Mobile — max-width: 576px */
+@media (max-width: 576px) {
+  .hero-title { font-size: 2.4rem; }
+  .hero-eyebrow { letter-spacing: 0.2em; font-size: 0.68rem; }
+  .testimonial-grid { grid-template-columns: 1fr; }
+  .btn-warning { width: 100%; }
+  .footer-nav { flex-direction: column; gap: 24px; }
+  .about-stats { gap: 18px; }
+  .hero-cta { flex-direction: column; align-items: center; }
 }
