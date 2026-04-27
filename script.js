@@ -105,6 +105,17 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 
+  // ── Pricing card → contact form package pre-selection ──
+  const bookBtns = document.querySelectorAll(".btn-book-preview[data-package]");
+  const packageSelect = document.getElementById("cf-package");
+  bookBtns.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      if (packageSelect && this.dataset.package) {
+        packageSelect.value = this.dataset.package;
+      }
+    });
+  });
+
   const checkAvailabilityBtn = document.getElementById("checkAvailabilityBtn");
   if (checkAvailabilityBtn) {
     checkAvailabilityBtn.addEventListener("click", function () {

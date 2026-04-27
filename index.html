@@ -561,7 +561,7 @@
               <li>Fun Props Included</li>
               <li>Professional Booth Attendant</li>
             </ul>
-            <a href="#contact" class="btn-book-preview">Check Availability</a>
+            <a href="#contact" class="btn-book-preview" data-package="Essential Experience">Check Availability</a>
           </div>
 
           <!-- ② Signature Prints — Most Popular -->
@@ -580,7 +580,7 @@
                 <li>GIFs + Boomerangs + Video <span class="tier-badge-new">New</span></li>
               </ul>
             </div>
-            <a href="#contact" class="btn-book-preview">Check Availability</a>
+            <a href="#contact" class="btn-book-preview" data-package="Signature Experience">Check Availability</a>
           </div>
 
           <!-- ③ Luxe Wedding Experience -->
@@ -600,7 +600,7 @@
               </ul>
             </div>
             <p class="luxe-value-note">Includes $550+ in premium upgrades</p>
-            <a href="#contact" class="btn-book-preview">Check Availability</a>
+            <a href="#contact" class="btn-book-preview" data-package="Luxe Experience">Check Availability</a>
           </div>
 
         </div>
@@ -747,6 +747,23 @@
                 <div class="form-field">
                   <label for="cf-guests">Estimated Guests</label>
                   <input type="number" id="cf-guests" name="Estimated Guests" placeholder="e.g. 150" min="1">
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="cf-package">Package Interest</label>
+                  <select id="cf-package" name="Package Interest">
+                    <option value="" disabled selected>Select a package</option>
+                    <option value="Essential Experience">Essential Experience — $399</option>
+                    <option value="Signature Experience">Signature Experience — $599</option>
+                    <option value="Luxe Experience">Luxe Experience — $999</option>
+                    <option value="Not sure yet">Not sure yet</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="cf-venue">Event Venue / Location</label>
+                  <input type="text" id="cf-venue" name="Venue" placeholder="Venue name or city, NJ">
                 </div>
               </div>
 
